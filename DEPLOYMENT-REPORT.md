@@ -15,3 +15,5 @@ The owner explicitly approved public publication of the complete PDF, page image
 GitHub: a local main branch and commit are prepared. Remote repository creation was denied by the GitHub integration (createRepository permission unavailable). A new empty repository URL and connected-app access are required before the project can be pushed and linked for Git-based deployments. No remote GitHub repository is claimed.
 
 Final verified production deployment: `dpl_95tKdZGKuU7ztdRggq4ANQGq1C6H` (READY). All 14 browser workflows passed against the live production origin. The refreshed source ZIP downloaded successfully and matched local SHA1 `7099f95a8f8f26f45d7b88e1b10fd08e822174f3`.
+
+11 November visual upgrade: source pushed to https://github.com/EFTEKHER/linux-digitallogic-sdlc. Git linking attempt returned: You need to add a Login Connection to your GitHub account first. No Git-linked Vercel deployment is claimed. The existing production origin is updated independently.

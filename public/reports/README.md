@@ -18,9 +18,17 @@ npm run test:e2e
 
 `playwright.config.js` uses `/usr/bin/chromium` in this environment. On another computer, run `npx playwright install chromium` and remove that executablePath override, or replace it with your browser path. Production tests: `BASE_URL=https://your-project.vercel.app npm run test:e2e`.
 
-The downloadable source-code archive includes the original PDF. Derived JPEGs are regenerated automatically by `npm run build` (or `npm run prepare:pages`) using PDF.js and @napi-rs/canvas, so the ZIP need not duplicate all rendered pages. Already present images are preserved.
+The GitHub source archive includes the original PDF and all 55 page images. If derived images are absent, `npm run build` (or `npm run prepare:pages`) regenerates them using PDF.js and @napi-rs/canvas. Already present images are preserved.
 
 Vite and standard JavaScript modules were chosen instead of Next/React: this academy has no server-dependent features, accounts or secrets, and all learning data/calculations run locally. Static output is inexpensive to deploy and the source content remains independent of the UI.
+
+## Interactive visual learning
+
+The K-map studio (`/#view=kmap`) walks through the problem, Gray ordering, filling the grid, each colored group, per-variable KEEP/DROP decisions, Boolean cancellation, expression construction, and full truth-table verification. Learners can select their own groups and receive feedback on invalid sizes, forbidden cells, incomplete cubes, or all-don’t-care selections. Source examples and custom SOP/POS inputs are supported.
+
+Page lessons also include live binary-weight, Linux-layer, logic-gate, processor-memory and SDLC widgets.
+
+Source repository: https://github.com/EFTEKHER/linux-digitallogic-sdlc
 
 ## Content and architecture
 
@@ -73,3 +81,5 @@ Every implemented calculator is editable and has input validation. Binary arithm
 Tutorials are explicitly labeled YouTube searches; direct video links have not been verified. Google Fonts are external; system fallbacks remain usable if unavailable. No account, cloud sync, AI chat backend or analytics is implemented.
 
 See `TESTING-REPORT.md` and `public/data/coverage.json` for delivered evidence and limits.
+
+Git-based Vercel linking currently requires the owner to add the EFTEKHER GitHub Login Connection in Vercel account authentication settings. Until then, the existing production project is updated through verified static deployments.

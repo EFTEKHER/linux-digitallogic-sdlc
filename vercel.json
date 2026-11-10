@@ -3,5 +3,12 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "installCommand": "npm ci",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/downloads/it-path-academy-source-code.zip",
+      "destination": "https://github.com/EFTEKHER/linux-digitallogic-sdlc/archive/refs/heads/main.zip",
+      "permanent": false
+    }
+  ]
 }
