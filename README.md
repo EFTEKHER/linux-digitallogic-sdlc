@@ -22,6 +22,14 @@ The downloadable source-code archive includes the original PDF. Derived JPEGs ar
 
 Vite and standard JavaScript modules were chosen instead of Next/React: this academy has no server-dependent features, accounts or secrets, and all learning data/calculations run locally. Static output is inexpensive to deploy and the source content remains independent of the UI.
 
+## Interactive visual learning
+
+The K-map studio (`/#view=kmap`) walks through the problem, Gray ordering, filling the grid, each colored group, per-variable KEEP/DROP decisions, Boolean cancellation, expression construction, and full truth-table verification. Learners can select their own groups and receive feedback on invalid sizes, forbidden cells, incomplete cubes, or all-don’t-care selections. Source examples and custom SOP/POS inputs are supported.
+
+Page lessons also include live binary-weight, Linux-layer, logic-gate, processor-memory and SDLC widgets.
+
+Source repository: https://github.com/EFTEKHER/linux-digitallogic-sdlc
+
 ## Content and architecture
 
 - `public/book.pdf`: unchanged uploaded PDF.

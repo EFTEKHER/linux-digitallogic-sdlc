@@ -59,3 +59,7 @@ Public production origin: https://it-path-bangla-written-academy.vercel.app. Ver
 - Tutorials are labeled YouTube searches; no direct videos independently verified.
 - No per-formula standalone index with exhaustive original formula transcription; source images preserve them.
 - Google Fonts require network; system fallback is provided.
+
+## Visual-learning upgrade (11 November 2026)
+
+Twelve calculation/storage/teaching test groups pass. The expanded 22-workflow browser suite includes K-map group explanation, manual selection validation, POS tutoring, visual verification, four responsive widths, live concept widgets, deep links and browser hash changes. Existing source assets and local study-data keys are preserved. GitHub repository: EFTEKHER/linux-digitallogic-sdlc.
