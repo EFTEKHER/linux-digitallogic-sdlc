@@ -17,3 +17,5 @@ GitHub: a local main branch and commit are prepared. Remote repository creation 
 Final verified production deployment: `dpl_95tKdZGKuU7ztdRggq4ANQGq1C6H` (READY). All 14 browser workflows passed against the live production origin. The refreshed source ZIP downloaded successfully and matched local SHA1 `7099f95a8f8f26f45d7b88e1b10fd08e822174f3`.
 
 11 November visual upgrade: source pushed to https://github.com/EFTEKHER/linux-digitallogic-sdlc. Git linking attempt returned: You need to add a Login Connection to your GitHub account first. No Git-linked Vercel deployment is claimed. The existing production origin is updated independently.
+
+Git connection completed: prj_MUnidiAymgsdW5K499BA504Cnbas, repository EFTEKHER/linux-digitallogic-sdlc, main branch. Git-sourced deployment dpl_EzBA3RLpgYsrhLgHUs6Sx3szk1zR reached READY; public production origin https://linux-digitallogic-sdlc.vercel.app returns 200 with Vercel default protection retained. The interactive-reader upgrade is published through main.

@@ -74,7 +74,7 @@ The owner explicitly approved public access on 10 November 2026. Vercel confirme
 
 ## Scope and verification limits
 
-All original pages, source order and page-level lessons are present. This is **not certified 100% topic-by-topic instructional coverage**. Full mode includes complete original extracted English text and original images alongside condensed bilingual teaching notes. Some topics need richer individual tutoring, additional diagrams and further worked variants. Original bank rows are extracted text, not fully certified transcriptions; complement bars can be damaged. The source audit explicitly flags these limits. Source past-paper provenance is reported as the book's claim, not independently authenticated.
+All original pages, source order and page-level lessons are present. This is **not certified 100% topic-by-topic instructional coverage**. Full mode uses an interactive reading deck with focus checklists, clickable terms, Bangla concept coaching, command missions, table exploration and recall checks; original PDF/page images remain separately accessible. Some topics need richer individual tutoring, additional diagrams and further worked variants. Original bank rows are extracted text, not fully certified transcriptions; complement bars can be damaged. The source audit explicitly flags these limits. Source past-paper provenance is reported as the book's claim, not independently authenticated.
 
 Every implemented calculator is editable and has input validation. Binary arithmetic shows column carry/borrow; fixed-width signed representation is separate. Repeating fractions are truncated and labeled. K-map/Boolean outputs are verified against specified input rows, with don’t-care rows excluded from equivalence requirements. Multiple minimum solutions may be valid. Generated MCQs are not an official examination pattern.
 
@@ -82,4 +82,6 @@ Tutorials are explicitly labeled YouTube searches; direct video links have not b
 
 See `TESTING-REPORT.md` and `public/data/coverage.json` for delivered evidence and limits.
 
-Git-based Vercel linking currently requires the owner to add the EFTEKHER GitHub Login Connection in Vercel account authentication settings. Until then, the existing production project is updated through verified static deployments.
+The repository is linked to Vercel project linux-digitallogic-sdlc (production branch main): https://linux-digitallogic-sdlc.vercel.app. Pushes to main trigger Git-based builds. The earlier standalone academy URL is maintained as a separate deployment.
+
+Full-reader card progress uses it-path-source-reader-v1 and is included in study backup export/import as sourceCards.
