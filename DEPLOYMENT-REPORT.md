@@ -1,13 +1,15 @@
 # Deployment report
 
-Project: `it-path-bangla-written-academy`
+Production URL: https://it-path-bangla-written-academy.vercel.app
 
-Team: `efte` (`team_T4VZ88onwtrhYbFpClgOxwQq`)
+Vercel project: it-path-bangla-written-academy
 
-Project ID: `prj_jtca1Y3c6Fj8vRCA89inH99NnQSi`
+Team: efte (team_T4VZ88onwtrhYbFpClgOxwQq)
 
-Target: production. Existing projects were not modified.
+Project ID: prj_jtca1Y3c6Fj8vRCA89inH99NnQSi
 
-The owner explicitly approved public access on 10 November 2026. Vercel confirmed SSO protection disabled on this new project.
+First production deployment: dpl_GjykmK3uv4QkuNmWsnt3nbKYTLDA, READY. Public HTTP 200 verified; 62 asset checks passed, including PDF and ZIP source-hash checks. Updated UI fixes and source download are published to this same project and origin.
 
-Large inline connector uploads returned no deployment. GitHub repository creation was unavailable because the configured integration lacks createRepository permission. Deployment is proceeding through individual Vercel file uploads. Live verification will be added after Vercel reports READY.
+The owner explicitly approved public publication of the complete PDF, page images, academy code/assets, JSON lesson/question data and reports. No secrets or personal browser study data are in the payload. Existing user projects were not modified.
+
+GitHub: a local main branch and commit are prepared. Remote repository creation was denied by the GitHub integration (createRepository permission unavailable). A new empty repository URL and connected-app access are required before the project can be pushed and linked for Git-based deployments. No remote GitHub repository is claimed.

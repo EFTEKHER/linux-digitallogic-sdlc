@@ -26,7 +26,7 @@ Known answers include 1101.11₂ = 13.75₁₀, corrected 145.23₈ = 101.296875
 
 ## Browser and responsive verification
 
-`npm run test:e2e`: **12 Chromium workflows passed** on the final locally built site:
+`npm run test:e2e`: **14 Chromium workflows passed** on the final locally built site:
 
 1. Brief/Guided/Full modes; guided restart; navigation; bookmarks, notes and completion after reload.
 2. English and Bangla search, highlighted matches and direct source-page navigation.
@@ -37,14 +37,16 @@ Known answers include 1101.11₂ = 13.75₁₀, corrected 145.23₈ = 101.296875
 7–10. No horizontal document overflow at 320, 390, 768 and 1440 px, across all original main sections.
 11. Simulated timer expiry and automatic submission.
 12. Backup download, invalid-import feedback and valid progress import.
+13. Original-bank search and revealable answers.
+14. A delayed original-bank response cannot overwrite another section.
 
-Additional manual browser check: original-bank question count/search; desktop and mobile screenshots. Source reference HTML/CSS/JS were downloaded and inspected. A browser navigation to the external design reference encountered the environment's certificate-trust error; its source remained accessible through curl.
+Additional manual browser check: original-bank question count/search; desktop and mobile screenshots. Source reference HTML/CSS/JS were downloaded and inspected. The initial browser certificate issue was resolved by trusting the managed proxy CA public-key pin, and the external reference was subsequently inspected in Chromium.
 
 Tests use Chromium on Linux; Firefox, Safari, iOS hardware and screen-reader testing were not performed. Bangla text was visually checked in screenshots. Images use original English source. Browser actions show no page errors in the exercised study flow. Font size and dark styling are present; this is not a formal WCAG audit.
 
 ## Production verification
 
-Deployment status and access checks will be recorded in `DEPLOYMENT-REPORT.md`. A READY deployment is distinct from publicly accessible hosting. The new project's default Vercel Authentication must not be described as removed unless explicitly approved and verified.
+Public production origin: https://it-path-bangla-written-academy.vercel.app. Vercel reports READY and public HTTP returns 200. All 55 original page-image endpoints and source JSON/report endpoints passed; the live PDF and source ZIP matched local SHA1 hashes (62 asset checks total). The first production browser pass detected a 320px import-control overflow; it was fixed and the expanded 14-workflow suite passed locally. Final production browser regression is run after the updated deployment and reported with the delivery. Authentication was disabled only after explicit owner approval.
 
 ## Remaining limits
 

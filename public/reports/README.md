@@ -8,6 +8,7 @@ Requires Node 20.19+ / 22.12+ (Node 24 used in this session).
 
 ```sh
 npm ci
+npm run prepare:pages  # regenerate page JPEGs from the included source PDF
 npm run dev
 npm test
 npm run build
@@ -16,6 +17,8 @@ npm run test:e2e
 ```
 
 `playwright.config.js` uses `/usr/bin/chromium` in this environment. On another computer, run `npx playwright install chromium` and remove that executablePath override, or replace it with your browser path. Production tests: `BASE_URL=https://your-project.vercel.app npm run test:e2e`.
+
+The downloadable source-code archive includes the original PDF. Derived JPEGs are regenerated automatically by `npm run build` (or `npm run prepare:pages`) using PDF.js and @napi-rs/canvas, so the ZIP need not duplicate all rendered pages. Already present images are preserved.
 
 Vite and standard JavaScript modules were chosen instead of Next/React: this academy has no server-dependent features, accounts or secrets, and all learning data/calculations run locally. Static output is inexpensive to deploy and the source content remains independent of the UI.
 
