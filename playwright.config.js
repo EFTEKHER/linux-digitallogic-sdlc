@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/e2e',use:{baseURL:process.env.BASE_URL||'http://127.0.0.1:4173',headless:true},webServer:process.env.BASE_URL?undefined:{command:'npm run preview -- --port 4173',url:'http://127.0.0.1:4173',reuseExistingServer:true},reporter:[['list'],['json',{outputFile:'test-results/e2e.json'}]],projects:[{name:'chromium',use:{browserName:'chromium',launchOptions:{executablePath:'/usr/bin/chromium',args:['--no-sandbox']}}}]});

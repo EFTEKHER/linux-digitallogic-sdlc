@@ -1,0 +1,778 @@
+[
+  {
+    "id": 0,
+    "page": 52,
+    "question": "Who created Linux, when and where?",
+    "answer": "Linus Torvalds, April 1991, University of Helsinki, Finland, aged 21.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 1,
+    "page": 52,
+    "question": "Linux vs Unix in one line?",
+    "answer": "Linux is just the  and is open source (GPL); Unix is a com-  kernel plete OS and is copyrighted.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 2,
+    "page": 52,
+    "question": "Layers of Linux architecture?",
+    "answer": " →  →  →  → Hardware Kernel Shell Applications User.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 3,
+    "page": 52,
+    "question": "Three ways Linux provides security?",
+    "answer": "Authentication, authorization, encryption.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 4,
+    "page": 52,
+    "question": "Show last 10 lines of a continuously updating log  [Titas Gas AE(CSE) 2024]",
+    "answer": "tail -f logfile",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 5,
+    "page": 52,
+    "question": "Show hidden files and directories  [Milk Vita AM(CSE) 2023]",
+    "answer": "ls -a  ls -la  (or  for details)",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 6,
+    "page": 52,
+    "question": "Delete a directory and its files",
+    "answer": "rm -r dirname  rmdir (  only removes empty ones)",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 7,
+    "page": 52,
+    "question": "Print the last five lines of a text file",
+    "answer": "tail -n 5 filename.txt",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 8,
+    "page": 52,
+    "question": "Download a file from a URL",
+    "answer": "wget http://example.com/file.txt",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 9,
+    "page": 52,
+    "question": " myfile Show the 11th to 15th line of  [BTCL AME 2023]",
+    "answer": "sed -n ’11,15p’ myfile",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 10,
+    "page": 52,
+    "question": " myfile Show permission for read/write/execute on",
+    "answer": "chmod 777 myfile  ls -l myfile  (or  to view)",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 11,
+    "page": 52,
+    "question": "Show the current file directory",
+    "answer": "pwd",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 12,
+    "page": 52,
+    "question": "Make a directory named PSC  [BPSC SAE 2021]",
+    "answer": "mkdir PSC",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 13,
+    "page": 52,
+    "question": " /home/admin Copy a directory with all its contents into [BPSC SAE 2021]",
+    "answer": "cp -r PSC /home/admin",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 14,
+    "page": 52,
+    "question": "Create a user  [PGCB SAE(CSE) 2021]",
+    "answer": "useradd username  passwd username  then",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 15,
+    "page": 52,
+    "question": "Show all files including hidden ones inside the home di- rectory  [NESCO AM(ICT) 2021]",
+    "answer": "ls -a ˜",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 16,
+    "page": 52,
+    "question": "Show disk space in human-readable format  [NESCO AM(ICT) 2021]",
+    "answer": "df -h",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 17,
+    "page": 52,
+    "question": "Find previous commands containing a string  [BCC AP 2021]",
+    "answer": "history | grep pattern",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 18,
+    "page": 52,
+    "question": " apscl.txt Create file , give all permissions, read first 7 lines, delete it  [APSCL AE(ICT) 2021]",
+    "answer": "touch apscl.txt chmod 777 apscl.txt · · head -n 7 apscl.txt  rm apscl.txt  ·",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 19,
+    "page": 53,
+    "question": "Ownership and group permission command  [PBL HE 2023]",
+    "answer": "chown user:group filename and chgrp group filename",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 20,
+    "page": 53,
+    "question": "What is RPM? What is YUM?",
+    "answer": "= RPM Red Hat Package Manager  = (build/install/upgrade/query/remove packages). YUM  Yel- lowdog Updater Modified, an open-source utility that manages RPM packages.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 21,
+    "page": 53,
+    "question": "GPT vs MBR?",
+    "answer": " > GPT: 2 TB disks, 128 primary partitions, GUIDs, CRC32 integrity, part of UEFI. MBR: max 2 TB, only 4 primary partitions.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 22,
+    "page": 53,
+    "question": "( E )  in decimal, octal and binary  [45th BCS CSE 2024] 16",
+    "answer": "E  = 14  = 16  = 1110 10 8 2",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 23,
+    "page": 53,
+    "question": "Next four after 6FC, 6FE  [45th BCS CSE 2024]",
+    "answer": "Step is 2:  700, 702, 704, 706",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 24,
+    "page": 53,
+    "question": " (+55) 2’s complement of  [45th BCS CSE 2024] 10",
+    "answer": "55 = 00110111  = 11001000  =  11001001 ; 1’s ; 2’s",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 25,
+    "page": 53,
+    "question": "(423)  (3000)  to octal and  to hex  [BPDB AE(CSE) 2024] 10 10",
+    "answer": "(423)  = (647)  (3000)  = ( BB 8) ; 10 8 10 16",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 26,
+    "page": 53,
+    "question": "(651)  to decimal and hex  [BPSC AME 2021] 8",
+    "answer": "· ·  → = 6 64 + 5 8 + 1 =  425  110 101 001 1A9 ; binary 10 16",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 27,
+    "page": 53,
+    "question": "(1 AC )  to binary and decimal  [DPDC 2020] 16",
+    "answer": "1 1010 1100  256 + 160 + 12 =  428 ; 2 10",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 28,
+    "page": 53,
+    "question": "(2345)  to hex  [ICT Ministry AP 2017] 10",
+    "answer": "929 16",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 29,
+    "page": 53,
+    "question": "( ABCD )  to octal  [ICT Ministry AP 2017] 16",
+    "answer": " →  →  1010 1011 1100 1101 125715 Binary group in 3s 8",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 30,
+    "page": 53,
+    "question": "( CDAB )  to octal  [BTCL JAM 2024] 16",
+    "answer": " → 1100 1101 1010 1011 146653 8",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 31,
+    "page": 53,
+    "question": "What is 2’s complement and why is it used?",
+    "answer": " +1 1’s complement . It lets the computer perform  subtraction us- , and gives a single representation of zero. ing addition",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 32,
+    "page": 53,
+    "question": "−  − ( 24) (+11)  using 2’s complement  [18th NTRCA 10 10 2024]",
+    "answer": "−  −  −  → 24 11 = 35  35 = 00100011  =  11011101 . 2’s",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 33,
+    "page": 53,
+    "question": " 00010011 + 00100110 BCD addition  [NPCNL JAM 2022]",
+    "answer": " ≤ 13 + 26 = 39 9 . Both groups , so no correction:  0011 1001",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 34,
+    "page": 53,
+    "question": "Excess-3 code of 1010  [DPDC 2020]",
+    "answer": " →  → 1010  is decimal 10 digits 1 and 0 Excess-3 codes 0100 and  → 0100 0011 0011",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 35,
+    "page": 53,
+    "question": "Difference between BCD and binary code?",
+    "answer": "Binary converts the  at once; BCD converts  whole number  each  separately into 4 bits. BCD wastes codes 1010–1111. decimal digit",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 36,
+    "page": 53,
+    "question": "Parity method for error detection  [BB AP 2023]",
+    "answer": "An extra bit makes the total number of 1s even (or odd). The re- ceiver recounts; a wrong count means an error. Detects single-bit errors only, cannot correct them.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 37,
+    "page": 53,
+    "question": "Bit string of “Delta” in ASCII  [BB AP 2023]",
+    "answer": " → Hex 44 65 6C 74 61 01000100 01100101 01101100 01110100 01100001 ¯ ¯ ¯ ¯",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 38,
+    "page": 53,
+    "question": "State De Morgan’s law  [BPSC AP 2023]",
+    "answer": " ·  · A  +  B  =   A  B  =  A   B A  +  B  and . In words: break the bar, change the sign.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 39,
+    "page": 53,
+    "question": "  ′ ′ ′ ′  F  =  A B C  + A BC  + AB Simplify [45th BCS CSE 2024]",
+    "answer": "    ′ ′ ′ ′ ′ A C ( B +  B ) +  AB =  A C  +  AB",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 40,
+    "page": 53,
+    "question": "¯  Y  =  A B    + ( A  +  B ) C Simplify  [BPSC ADA 2022]",
+    "answer": "¯ ¯ ¯ A B    +  AC  +  BC  =  A B  +  AC  +  BC  =  A B    + ; with consensus, C ( A  +  B )",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 41,
+    "page": 53,
+    "question": " ( x  +  y  +  xy )( x  +  z ) Simplify  [BPSC AME 2021]",
+    "answer": "x  +  y  +  xy  =  x  +  y  ( x  +  y )( x  +  z ) =  x  +  yz ; so",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 42,
+    "page": 53,
+    "question": " ¯ x yz ¯  + ¯ xyz  +  x y ¯ Simplify  [BPSC AP 2021] 7.3 Gates, K-map and circuits",
+    "answer": "xz ¯ (¯ y  +  y ) +  x y ¯  =  ¯xz  +  x¯y",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 43,
+    "page": 54,
+    "question": "What is a universal gate and why? [BRiCM AME 2024, NPCNL JAM 2022]",
+    "answer": "NAND and NOR. Any other gate (NOT, AND, OR, XOR) — and therefore any digital circuit — can be built using only that one gate type.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 44,
+    "page": 54,
+    "question": "NOT using NAND / NOR?",
+    "answer": "Tie both inputs together to the same signal.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 45,
+    "page": 54,
+    "question": "AND using only NAND?",
+    "answer": "NAND followed by a NAND-inverter (2 NANDs).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 46,
+    "page": 54,
+    "question": "OR using only NAND?",
+    "answer": "Invert both inputs with NANDs, then feed a NAND (3 NANDs).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 47,
+    "page": 54,
+    "question": "AND using only NOR?",
+    "answer": "Invert both inputs with NORs, then a NOR (3 NORs).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 48,
+    "page": 54,
+    "question": "OR using only NOR?",
+    "answer": "NOR followed by a NOR-inverter (2 NORs).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 49,
+    "page": 54,
+    "question": "XOR using NAND, maximum 4 gates  [PGCB AE(CSE) 2021]",
+    "answer": " ·  ·  ·  A  AB  B  AB  Y  = 4 NAND gates:",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 50,
+    "page": 54,
+    "question": "P (3 ,  5 ,  7 ,  9 ,  11 ,  13 ,  15)  simplified  [Bank SO(AME) 2021]",
+    "answer": " ⇒  ⇒ Z F  =  Z  W, X, Y, Z All odd minterms  is 1 in every one  (for  Z with  as LSB).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 51,
+    "page": 54,
+    "question": "F  =  ABC  +  ABC  +  ABC  +  ABC  +  ABC  by K-map [38th BCS]",
+    "answer": " F  =  AB  +  AB  +  BC Group:  (check each group by dropping the changing variable).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 52,
+    "page": 54,
+    "question": "Rule for reading a K-map group?",
+    "answer": "Drop every variable that  inside the group; keep the ones  changes  →  →  0  1 that stay constant. barred, unbarred (for SOP).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 53,
+    "page": 54,
+    "question": "Why is the order 00, 01, 11, 10?",
+    "answer": "So that  between adjacent cells (Gray code)  only one bit changes — that is what makes grouping valid.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 54,
+    "page": 54,
+    "question": "What is a don’t-care condition?",
+    "answer": "An input combination that can never occur or whose output does  × not matter. Marked . Use it as  to make a bigger group, or ignore  1 it.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 55,
+    "page": 54,
+    "question": "Half adder equations?",
+    "answer": " ⊕  · S  =  A B  C  =  A  B ,",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 56,
+    "page": 54,
+    "question": "Full adder equations?",
+    "answer": " ⊕  ⊕ S  =  A B C  C  =  AB  +  BC  +  AC , out in in in",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 57,
+    "page": 54,
+    "question": "A full adder is made of?  [PSC Lecturer 2017]",
+    "answer": "Two half adders and one OR gate.  ",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 58,
+    "page": 54,
+    "question": "Functionality of a multiplexer  [PSC Lecturer 2017]",
+    "answer": "n  2 Selects one of data inputs and routes it to a single output, based  n on  select lines. “Many to one.”",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 59,
+    "page": 54,
+    "question": "Five applications of a multiplexer  [BCSCL NE 2017]",
+    "answer": "Data routing/selection, communication systems, parallel-to-serial conversion, waveform generation, implementing Boolean functions (logic function generator).  ",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 60,
+    "page": 54,
+    "question": "Encoder vs decoder?",
+    "answer": "n  →  2 n Encoder: inputs  outputs, built from  gates, simple.  OR   n  →  n 2  + Decoder:  inputs outputs, built from  gates,  AND  NOT complex.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 61,
+    "page": 54,
+    "question": "Latch vs flip-flop?",
+    "answer": "Latch is -triggered (works while enable is high); flip-flop is  level -triggered (works on a clock transition). edge",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 62,
+    "page": 54,
+    "question": "Which flip-flop has an invalid state, and which cures it?",
+    "answer": " S  =  R  = 1  is invalid at ;  cures it by making that combination SR  JK .  has no invalid state. toggle  D",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 63,
+    "page": 54,
+    "question": "Race-around condition?",
+    "answer": " J  =  K  = 1 In a JK flip-flop with , the output toggles repeatedly while the clock is high. Cured by  or edge triggering.  master–slave",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 64,
+    "page": 54,
+    "question": "Combinational vs sequential circuit?",
+    "answer": "Combinational: no memory, no feedback, output depends only on present input (adder, MUX). Sequential: has memory and feedback, output depends on present input  past state (flip-flop, counter).  and  ",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 65,
+    "page": 54,
+    "question": "n  flip-flops count up to?",
+    "answer": "n n − 0  2 1 2  to , i.e. mod- . A mod-10 counter needs  flip-flops.  4",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 66,
+    "page": 54,
+    "question": "Synchronous vs asynchronous counter?",
+    "answer": "Synchronous: same clock to all flip-flops, fast, no cumulative delay. Asynchronous (ripple): output of one clocks the next, simpler but slower.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 67,
+    "page": 54,
+    "question": "8085 — year, bits, buses, memory?",
+    "answer": "Intel 1977, 8-bit data bus, 16-bit address bus, addresses ,  64 KB +5 V, 3.2 MHz.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 68,
+    "page": 54,
+    "question": "8085 register pairs?",
+    "answer": "BC, DE, HL (six 8-bit registers), plus accumulator, flag register, 16- bit PC and 16-bit SP.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 69,
+    "page": 54,
+    "question": "Highest priority 8085 interrupt?",
+    "answer": " — and it is non-maskable. TRAP",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 70,
+    "page": 55,
+    "question": "8086 — bits, address bus, memory, queue?",
+    "answer": " → First 16-bit processor; 20-bit address bus ;  instruc- 1 MB  6-byte tion queue; BIU and EU.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 71,
+    "page": 55,
+    "question": "How many addressing modes does the 8086 have?",
+    "answer": "Eight.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 72,
+    "page": 55,
+    "question": "MOV AL, 35H  is which mode?",
+    "answer": " — the operand is inside the instruction. Immediate",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 73,
+    "page": 55,
+    "question": "MOV AX, [BX]  is which mode?",
+    "answer": "Register indirect.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 74,
+    "page": 55,
+    "question": "MOV DX, [BX+04]  is which mode?",
+    "answer": " addressing. Based",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 75,
+    "page": 55,
+    "question": "What is an interrupt and an ISR?",
+    "answer": "An interrupt temporarily halts execution so a peripheral can access the processor; the ISR is the short routine that tells the processor how to handle it.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 76,
+    "page": 55,
+    "question": "Maskable vs non-maskable?",
+    "answer": "Maskable can be disabled by the programmer (INTR, RST 5.5/6.5/7.5); non-maskable cannot (TRAP).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 77,
+    "page": 55,
+    "question": "Microprocessor vs microcontroller?",
+    "answer": "µ P: only the processor, external memory/IO, costly, high power,  µ used in PCs. C: CPU + memory + I/O on one chip, cheap, low power, used in embedded devices.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 78,
+    "page": 55,
+    "question": "What does an assembler do?",
+    "answer": "Converts assembly language into machine code that a specific pro- cessor can execute.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 79,
+    "page": 55,
+    "question": "Four parts of an assembly statement?",
+    "answer": " : Label (ends with ), mnemonic, operand(s), comment (begins with ; ).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 80,
+    "page": 55,
+    "question": "Macro vs procedure?",
+    "answer": " < Macro: no CALL/RET, code generated each call, more memory, 10 instructions. Procedure: uses CALL/RET, code generated once, less  > memory, 10 instructions.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 81,
+    "page": 55,
+    "question": "Timer vs counter?",
+    "answer": "Counter increments on an  pulse (max rate 1/24 of oscilla-  external tor); timer increments every  from the internal clock  machine cycle (max rate 1/12).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 82,
+    "page": 55,
+    "question": "The 7 SDLC stages?",
+    "answer": "Planning & requirement analysis, defining requirements (SRS), de- sign, development, testing, deployment, maintenance.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 83,
+    "page": 55,
+    "question": "Which stage produces the SRS?",
+    "answer": "Stage 2 — defining requirements.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 84,
+    "page": 55,
+    "question": "Which stage ensures user acceptance?",
+    "answer": "Testing, specifically .  acceptance testing",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 85,
+    "page": 55,
+    "question": "Waterfall disadvantages?",
+    "answer": "Cannot accept requirement changes; high risk; unsuitable for large complex projects; working software comes late.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 86,
+    "page": 55,
+    "question": "How long is one Agile iteration?",
+    "answer": "One to three weeks.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 87,
+    "page": 55,
+    "question": "Name four Agile methods.",
+    "answer": "Scrum, XP (eXtreme Programming), FDD, DSDM, Crystal, Lean.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 88,
+    "page": 55,
+    "question": "The defining feature of the spiral model?",
+    "answer": " in every loop. Risk analysis",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 89,
+    "page": 55,
+    "question": "White box vs black box in one line?",
+    "answer": "White box: internal code known, done by the , suits algo-  developer rithm testing, slowest. Black box: only the GUI/functionality, done by the , fastest.  test engineer",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 90,
+    "page": 55,
+    "question": "Verification vs validation?",
+    "answer": " = Verification  “building the product right”, static, no execution, QA.  = Validation  “building the right product”, dynamic, code executes, QC.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 91,
+    "page": 55,
+    "question": "Alpha vs beta testing?",
+    "answer": " + Alpha: in-house, white  black box, before launch. Beta: real users, black box only, at marketing time.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 92,
+    "page": 55,
+    "question": "Cohesion vs coupling — which is high, which is low?",
+    "answer": "Cohesion  (strength within a module); coupling  (depen-  high  low dence between modules).",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 93,
+    "page": 55,
+    "question": "Three types of feasibility?",
+    "answer": "Technical, operational (behavioural), economic.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 94,
+    "page": 55,
+    "question": "Five steps of requirement engineering?",
+    "answer": "Feasibility study, elicitation & analysis, specification (SRS), valida- tion, management.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 95,
+    "page": 55,
+    "question": "DMAIC vs DMADV?",
+    "answer": "DMAIC (Define, Measure, Analyse, Improve, Control) improves an  process; DMADV (. . . Design, Verify) creates a  design. existing  new",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  },
+  {
+    "id": 96,
+    "page": 55,
+    "question": "Singleton pattern?",
+    "answer": "A class with only one instance and a global point of access. Early or lazy instantiation. Saves memory; used in logging, caching, thread pools, configuration.",
+    "source": "PDF Original Question — extracted wording",
+    "verification": "Column extraction; mathematical overbars may be lost. Compare original image before memorizing a formula."
+  }
+]

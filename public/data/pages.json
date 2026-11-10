@@ -1,0 +1,1072 @@
+[
+  {
+    "id": 1,
+    "title": "Academy orientation",
+    "bn": "শূন্য থেকে IT Written প্রস্তুতি",
+    "intro": "এই বইয়ে Linux, সংখ্যা পদ্ধতি, Boolean algebra, K-map, digital circuits, microprocessor এবং software engineering একসঙ্গে শেখা যাবে।",
+    "points": [
+      "প্রতিদিন একটি ধারণা বুঝে নিজের ভাষায় বলুন",
+      "অঙ্ক আগে নিজে করুন, তারপর সমাধান দেখুন",
+      "মূল পৃষ্ঠা ও ব্যাখ্যা পাশাপাশি মিলিয়ে পড়ুন"
+    ],
+    "memory": "বুঝুন → অনুশীলন → যাচাই → পুনরাবৃত্তি",
+    "text": "BANGLADESH GOVERNMENT IT EXAMINATION\n\n\n\n CRACK THE\n IT WRITTEN\n\n\n\n\n Linux • Digital Electronics • K-Map\n Microprocessor & Assembly • SDLC\n\n\n\n\n A complete written + MCQ preparation guide, built for the student\n who has to start from zero and still pass.\n\n\n\n\nWhat is inside this book",
+    "printed": null,
+    "chapter": 0,
+    "sections": []
+  },
+  {
+    "id": 2,
+    "title": "Book map & source references",
+    "bn": "বইয়ের মানচিত্র",
+    "intro": "Contents হলো পথ দেখানোর তালিকা। তবে এই বইয়ের শুরুতে দেওয়া Part নম্বর ও মূল অধ্যায়ের নম্বর এক নয়। এখানে মূল অধ্যায়ের ক্রম রাখা হয়েছে।",
+    "points": [
+      "PDF-এর ৫৫টি পৃষ্ঠা আছে",
+      "মুদ্রিত পৃষ্ঠা ও PDF পৃষ্ঠা আলাদা",
+      "সূচনা, final revision, Linux, numbers, K-map, circuits, processor, SDLC, question bank"
+    ],
+    "memory": "PDF page ≠ printed page",
+    "text": "IT Written Exam Guide\n\n\n                                             The Final Revision Sheet. Everything compressed. Read this the\nPART 0 — 4 pages                             night before the exam.\n                                             Basic Linux — architecture, distros, disks, permissions, and the\nPART 1                                       full command list.\n                                             Digital Electronics — number systems, codes, Boolean algebra,\nPART 2                                       gates, adders, MUX, flip-flops, counters.\n                                             The K-Map Tutorial — taught step by step, from the very first grid\nPART 3                                       to don’t-care and POS problems.\n                                             Microprocessor & Assembly — 8085, 8086, registers, addressing\nPART 4                                       modes, instruction set, interrupts.\n                                             Software Engineering & SDLC — all models, requirement engi-\nPART 5                                       neering, testing, design.\n                                             Past Question Bank — solved, sorted by topic, with the exam\nPART 6                                       name marked.\n\n\n\n\nSource material: Compact IT Written, Basic Linux → Software Engineering chapters (pp. 525–619).\nPast-paper tags shown as [45th BCS, CSE 2024] come directly from that book.\n\n\n                                                                     2",
+    "printed": 2,
+    "chapter": 0,
+    "sections": []
+  },
+  {
+    "id": 3,
+    "title": "A practical study plan",
+    "bn": "কীভাবে পড়বেন",
+    "intro": "পড়া দেখে মনে হওয়া আর না দেখে উত্তর দিতে পারা আলাদা। Active recall মানে বই বন্ধ করে মনে করার চেষ্টা।",
+    "points": [
+      "প্রথমে Linux ও number system",
+      "তারপর কলম দিয়ে K-map",
+      "শেষে processor, SDLC ও question bank",
+      "দৈনিক ভুল উত্তরগুলো পুনরায় করুন"
+    ],
+    "memory": "পড়ুন → ঢাকুন → বলুন → মিলান",
+    "text": "How to use this book (read this first — 2 minutes)\n\n\n\n\nYou said you are a weak student. Good — that is honest, and honesty is the thing that fixes it. Weak\nstudents fail these exams for one reason: they try to read everything and practise nothing. This book is\nbuilt so you cannot make that mistake.\n  The only study method you need\n\n   1. Week 1–2: Read Part 1 and Part 2 slowly. Do not memorise. Just understand.\n   2. Week 3: Do Part 3 (K-map) with a pen and paper. Solve every worked example yourself first,\n      then check. This is the single highest-scoring topic.\n   3. Week 4: Part 4 and Part 5. These are mostly writing/theory marks — learn the lists and the\n      difference tables, because that is exactly how they are asked.\n   4. Every day: 20 minutes on Part 6 (question bank). Cover the answer with paper.\n   5. Night before: Part 0 only. Four pages. Nothing else.\n\nWhat actually comes in the exam\n\nFrom the past-paper tags in the source book, this is roughly where the marks sit:\n\n Topic                                 Weight             Usually asked as\n\n Number system conversion              Very high          Direct sums, 2’s complement\n K-map simplification                  Very high          “Simplify using K-map + draw circuit”\n Boolean simplification                Very high          Algebraic simplification, De Morgan\n Logic gates / universal gate          High               “Implement X using only NAND”\n Linux commands                        High               “Write the command for . . . ”\n SDLC phases & models                  High               7 phases, Waterfall vs Agile\n Testing (black/white box)             High               Difference table\n Adder / MUX / decoder                 Medium             Truth table + logic diagram\n Flip-flops & counters                 Medium             Characteristic table, difference\n 8085/8086, addressing modes           Medium             Features list, mode examples\n\n  A promise about the maths\n\n  Every K-map and every conversion in this book is solved line by line, the way a teacher would do it\n  on a board — no skipped steps. If you can follow arithmetic, you can do these. There is no hidden\n  talent involved.",
+    "printed": null,
+    "chapter": 0,
+    "sections": []
+  },
+  {
+    "id": 4,
+    "title": "Linux final revision",
+    "bn": "Linux এক নজরে",
+    "intro": "Kernel হলো operating system-এর কেন্দ্র। Shell আপনার command kernel-এর কাছে পৌঁছাতে সাহায্য করে।",
+    "points": [
+      "Hardware → Kernel → Shell → Applications",
+      "Linux kernel ১৯৯১ সালে Linus Torvalds শুরু করেন",
+      "r=4, w=2, x=1",
+      "pwd অবস্থান দেখায়, cd জায়গা বদলায়"
+    ],
+    "memory": "Kernel নিয়ন্ত্রণ করে, Shell কথা বলে",
+    "text": "PART 0 — THE 4-PAGE FINAL REVISION\nSHEET\n\n\nRead only these four pages the night before the exam. Everything else in this book exists to make these four pages make sense.\n\n\n\n1 · LINUX\n\n\nFacts. Linux = kernel (1991, Linus Torvalds, Univ. of Helsinki,        loader. OpenSSH = secure remote login suite.\nFinland, age 21). Written in C and assembly. Licence GPL.\nUnix is a complete OS by AT&T; Linux is only the kernel. Layers,       Permissions. Read, Write, Execute. chmod 777 file ⇒\ninside → out: Hardware → Kernel → Shell → Applications                 rwx for owner/group/others. r=4, w=2, x=1.\n→ User.                                                                Partition tools. fdisk (CLI), parted (CLI, bigger disks), gparted\nFeatures (6 marks question). Multiuser, Multitasking, Porta-           (GUI).\nbility, Security (authentication / authorisation / encryption),        GPT vs MBR. GPT = GUID Partition Table, part of UEFI. GPT:\nGUI (X Window), Hierarchical file system, Open source.                 >2 TB disks, 128 primary partitions, GUIDs, CRC32 checksum.\nDistros. Ubuntu (from Debian), Linux Mint (from Ubuntu),               MBR: max 2 TB, only 4 primary partitions.\nDebian (1993, most stable), Fedora / CentOS / RHEL (Red Hat            Disk layers. Physical disk (/dev/sda) → Partition → File sys-\nfamily), openSUSE.                                                     tem (ext4, xfs, btrfs) → LVM (pv, vg, lv) → RAID (mdadm) →\nPackage managers. RPM = Red Hat Package Manager. YUM                   Mounting.\n= Yellowdog Updater Modified (uses RPM). LILO = Linux boot\n\n\n   Command list — learn this table, it is 5–10 marks every year\n\n   pwd — print working directory                                       tail f — last 10 lines   tail -n 5 f\n   cd / cd ~ cd - cd .. — root / home / previous                       tail -f log — last 10 lines, live updating\n   / parent                                                            sed -n ’11,15p’ myfile — print line 11 to 15\n   ls ls -a ls -l ls -li ls -R ls -lt ls                               grep pattern file — search a string\n   -lX                                                                 history — previously used commands\n   ls -a — show hidden files (start with .)                            cut -d ’,’ -f 2 f       tr ’a-z’ ’A-Z’        wc f\n   ls -lh — long list, human-readable size                             gzip f    zcat f.gz — compress / view\n   mkdir dir     rmdir dir (must be empty)                             chmod 777 f      chmod +rwx f        chmod +x f\n   rm -r dir — delete directory + its files                            chown user:group f — ownership\n   touch f — create empty file                                         useradd u     userdel u       passwd u\n   cat f    cat > f — show / create                                    df -h — disk space, human readable\n   tac f — show file in reverse                                        find . -name file1.txt           echo \"text\"\n   cp a b    cp -r dir /home/admin — copy dir +                        ps — your processes    top — all processes\n   contents                                                            ping host     ip a     ifconfig       host domain\n   mv old new — move OR rename                                         ssh user@ip      scp    wget URL\n   head f — first 10 lines    head -n 7 f                              reboot    poweroff      cal      env     cmp f1 f2\n\nShortcuts. Ctrl+C halt · Ctrl+Z suspend (fg/bg) · Ctrl+D logout · Ctrl+W erase word · Ctrl+U erase line · Ctrl+R recall\ncommand.\n\n\n\n\n                                                                   2",
+    "printed": 2,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 5,
+    "title": "Numbers & Boolean revision",
+    "bn": "সংখ্যা ও যুক্তির সংক্ষিপ্ত পাঠ",
+    "intro": "Base বলে কত ধরনের digit আছে। Binary-তে ০ ও ১, hexadecimal-এ ০–৯ এবং A–F ব্যবহার হয়। Boolean algebra-তে + মানে OR, গুণ মানে AND।",
+    "points": [
+      "Decimal 10, binary 2, octal 8, hex 16",
+      "integer conversion-এ ভাগশেষ নিচ থেকে পড়ুন",
+      "fraction conversion-এ গুণফলের পূর্ণাংশ উপর থেকে পড়ুন",
+      "NOT(A+B)=NOT A · NOT B"
+    ],
+    "memory": "ভাগে নিচ, গুণে উপর",
+    "text": "PART 0 — Final Revision Sheet                                                                                     IT Written Exam Guide\n\n\n2 · NUMBER SYSTEMS & CODES\n\n\nBases. Decimal 10, Binary 2, Octal 8, Hex 16. 4 bits = 1 nib-          1’s complement = flip every bit.\nble; 8 bits = 1 byte.                                                  2’s complement = 1’s complement + 1.\nTo decimal: multiply each digit by baseposition . Integer              Doing it twice returns the original number.\npositions count 0, 1, 2 . . . from the right; fraction positions       Subtraction A − B = A + (2’s complement of B), then discard\n−1, −2 . . . from the point.                                           the final carry.\n\nFrom decimal: integer part = divide repeatedly by base, read           Codes. BCD (8421) — each decimal digit becomes 4 bits. If a\nremainders bottom to top. Fraction part = multiply repeatedly          group > 9, add 0110 (6).\nby base, read integers top to bottom.                                  Excess-3 = BCD + 0011. Un-weighted, self-complementing.\n                                                                       Gray code — only one bit changes between neighbours (this\nBinary ↔ Octal: group in 3 bits from the point outwards. Bi-           is why K-maps use 00,01,11,10).\nnary ↔ Hex: group in 4 bits. Pad with zeros — left for integer         ASCII — 7 or 8 bits per character. Unicode — 16 bits, >65,000\npart, right for fraction part.                                         characters.\nOctal ↔ Hex: always go through binary. Never do it directly.           Parity bit — one extra bit making the total number of 1s even\nHex digits. A=10, B=11, C=12, D=13, E=14, F=15.                        (even parity) or odd. Detects a single-bit error; cannot correct\n                                                                       it.\n\n\n\n                            Dec     Bin    Oct    Hex     Ex-3         Dec     Bin     Oct    Hex     Ex-3\n\n                                0   0000    0       0     0011          8     1000      10      8     1011\n                                1   0001    1       1     0100          9     1001      11      9     1100\n                                2   0010    2       2     0101          10    1010      12      A      —\n                                3   0011    3       3     0110          11    1011      13      B      —\n                                4   0100    4       4     0111          12    1100      14      C      —\n                                5   0101    5       5     1000          13    1101      15      D      —\n                                6   0110    6       6     1001          14    1110      16      E      —\n                                7   0111    7       7     1010          15    1111      17      F      —\n\n\n3 · BOOLEAN ALGEBRA\n\n\nA+0=A A·1=A                                 Absorption                                       Distributive\nA+1=1 A·0=0                                 A + AB = A                                       A(B + C) = AB + AC\nA+A=A A·A=A                                 A(A + B) = A                                     A + BC = (A + B)(A + C)\nA+A=1 A·A=0                                 A + AB = A + B                                   De Morgan\nA=A                                         Commutative                                      A+B =A·B\n                                            A+B =B+A                                         A·B =A+B\n\n   The K-map procedure — 8 lines, memorise them\n\n   1. Draw the grid. 2 var = 2 × 2, 3 var = 2 × 4, 4 var = 4 × 4.\n   2. Label headings in Gray order: 00, 01, 11, 10. Never 00,01,10,11.\n   3. SOP (Σm): put 1 in every minterm cell. POS (ΠM ): put 0 in every maxterm cell.\n   4. Group only in powers of two: 16, 8, 4, 2, 1. Groups must be rectangles, never diagonal or L-shaped.\n   5. Groups may overlap, and must be as large as possible. Make as few groups as you can.\n   6. The map wraps around — left edge touches right edge, top touches bottom, and the four corners form one group.\n   7. X (don’t care) may be used to enlarge a group, but never make a group only of X.\n   8. Read each group: keep the variable that stays constant, drop the one that changes. SOP: 1 → A, 0 → A. POS: 0 → A,\n   1 → A, and terms are ORed inside, ANDed outside.\n\n\n\n\n                                                                   3",
+    "printed": 3,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 6,
+    "title": "Circuits & processor revision",
+    "bn": "Circuit থেকে processor",
+    "intro": "Gate এক বা একাধিক bit নিয়ে output দেয়। Adder সংখ্যা যোগ করে। Flip-flop আগের একটি bit মনে রাখতে পারে।",
+    "points": [
+      "Half adder: S=A XOR B, C=AB",
+      "Full adder-এ carry input থাকে",
+      "MUX অনেক input থেকে একটি বেছে নেয়",
+      "8085 address bus 16-bit, 8086 address bus 20-bit"
+    ],
+    "memory": "Combinational এখন, sequential এখন + স্মৃতি",
+    "text": "PART 0 — Final Revision Sheet                                                                                     IT Written Exam Guide\n\n\n4 · LOGIC GATES & CIRCUITS\n\n\nBasic: AND, OR, NOT. Universal: NAND, NOR. Special: Ex-               MUX (many → one). 2n inputs, n select lines, 1 output. 4×1\nOR, Ex-NOR.                                                           MUX: Y = S1 S0 I0 + S1 S0 I1 + S1 S0 I2 + S1 S0 I3 . DEMUX is\nWhy universal? Any circuit at all can be built from NAND              the reverse: 1 input → 2n outputs.\nalone (or NOR alone), so manufacturing needs only one chip            Encoder 2n inputs → n outputs (built from OR gates).\ntype. NOT = both inputs of a NAND tied together. AND =                Decoder n inputs → 2n outputs (AND + NOT gates). 3-to-8\nNAND then NAND-inverter. OR = invert both inputs, then                decoder: D0 = A B C . . . D7 = ABC.\nNAND.                                                                 Combinational vs Sequential.\nEx-OR: output 1 when inputs are different. Y = A ⊕ B =                Combinational: output depends only on present input, no\nAB + AB. Ex-NOR: 1 when inputs are the same.                          memory, no feedback. Examples: adder, MUX, decoder.\nHalf adder. 2 inputs A, B. S = A ⊕ B, C = AB. One XOR                 Sequential: output depends on present input and past state,\n+ one AND.                                                            has memory, has feedback, usually clocked. Examples: flip-\nFull adder. 3 inputs A, B, Cin .                                      flop, counter, register.\nS = A ⊕ B ⊕ Cin\nCout = AB + BCin + Cin A\nBuilt from two half adders + one OR gate.\n\n\n\n                        Flip-flop    Characteristic equation      Behaviour\n\n                        SR           Q(t+1) = S + RQ(t)           S=R=1 is invalid/undefined\n                        JK           Q(t+1) = JQ + KQ             Same as SR but J=K=1 toggles\n                        D            Q(t+1) = D                   Output simply follows input (delay/data)\n                        T            Q(t+1) = T ⊕ Q(t)            T =1 toggles, T =0 holds\n\n\nLatch vs flip-flop: a latch is level-sensitive (enable), a flip-flop is edge-sensitive (clock). Race-around happens in a JK when\nJ=K=1 and the pulse is too long — cured by a master–slave JK. Counters: Asynchronous/ripple — clock goes only to the first\nflip-flop, output of one clocks the next; slower. Synchronous — one clock reaches all flip-flops; faster. An n flip-flop counter counts\n0 to 2n − 1.\n\n\n5 · MICROPROCESSOR & ASSEMBLY\n\n\nDefinition. Controlling unit of a micro-computer on a single          8 addressing modes of 8086. Register (MOV AX,CX) · Im-\nchip; does ALU operations and talks to connected devices. It is       mediate (MOV AL,35H) · Direct (MOV AX,[1592H]) · Reg-\nthe heart of the computer.                                            ister indirect (MOV AX,[BX]) · Based (MOV DX,[BX+04]) ·\nThree buses: data, address, control. IPC = instructions per           Indexed (MOV BX,[SI+16]) · Based-index · Relative based-\ncycle. Instruction set = the group of commands the processor          index.\nunderstands; interface between hardware and software.                 Instruction groups. Data transfer (MOV, PUSH, POP, XCHG,\n8085 — “eighty-eighty-five”, Intel, 1977, NMOS. 8-bit data            IN, OUT) · Arithmetic (ADD, SUB, MUL, DIV, INC, DEC, CMP) ·\nbus, 16-bit address bus ⇒ addresses 64 KB. 16-bit PC, 16-bit          Logical (AND, OR, XOR, NOT, TEST) · Rotate (RCL, RCR, ROL,\nSP, six 8-bit registers in pairs BC, DE, HL. +5 V, 3.2 MHz.           ROR) · Branch (JMP, CALL, RET) · Control.\n\n8086 — first 16-bit processor. 16-bit ALU, registers and data         Assembly statement: [label:] mnemonic [operands]\nbus. 20-bit address bus ⇒ 1 MB. Has a 6-byte instruction              ; comment. Comment starts with ;. An assembler converts\nqueue (pipelining). Versions: 8086 = 5 MHz, 8086-2 = 8 MHz,           assembly → machine code.\n8086-1 = 10 MHz.                                                      Interrupt = temporary halt of execution so a peripheral can be\n                                                                      served; handled by an ISR. Types: hardware and software (also\n                                                                      maskable / non-maskable).\n\n\n\n\n                                                                  4",
+    "printed": 4,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 7,
+    "title": "Microcontroller & code reuse",
+    "bn": "এক চিপে কী আছে?",
+    "intro": "Microcontroller-এ CPU, memory ও I/O সাধারণত এক chip-এ থাকে। Macro এবং procedure দুটোই code reuse-এর উপায়।",
+    "points": [
+      "Microprocessor system-এ বাহ্যিক memory ও I/O থাকতে পারে",
+      "Macro expansion প্রত্যেক ব্যবহারে code বসায়",
+      "Procedure-এ CALL ও RET দিয়ে একই code চলে",
+      "১০ instruction-এর সীমা বাধ্যতামূলক নিয়ম নয়"
+    ],
+    "memory": "Macro কপি, procedure কল",
+    "text": "PART 0 — Final Revision Sheet                                                                             IT Written Exam Guide\n\n\n   Microprocessor                                                 Microcontroller\n\n   Heart of a computer system; used for big applications          Heart of an embedded system; runs a single task\n   Only a processor — memory and I/O connected externally         CPU + memory + I/O all on one chip\n   High cost, high power, no power-saving mode                    Low cost, low power, has power-saving mode\n   Used in personal computers                                     Used in washing machines, MP3 players\n\n\nMacro vs procedure: a macro’s machine code is generated each time it is called (more memory, no CALL/RET, for <10 instruc-\ntions); a procedure’s code is generated once (less memory, needs CALL/RET, for >10 instructions).\n\n\n\n\n                                                              5",
+    "printed": 5,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 8,
+    "title": "Software engineering revision",
+    "bn": "প্রয়োজন থেকে রক্ষণাবেক্ষণ",
+    "intro": "SDLC হলো software তৈরির সংগঠিত জীবনচক্র। শুধু code লেখা যথেষ্ট নয়—কার জন্য কী বানাচ্ছি তা আগে বুঝতে হয়।",
+    "points": [
+      "Planning → Requirements → Design → Development → Testing → Deployment → Maintenance",
+      "SRS-এ requirements লেখা হয়",
+      "Spiral-এ risk analysis থাকে",
+      "Verification specification মেলে, validation ব্যবহারকারীর প্রয়োজন মেলে"
+    ],
+    "memory": "প্রয়োজন → নকশা → নির্মাণ → পরীক্ষা",
+    "text": "PART 0 — Final Revision Sheet                                                                                   IT Written Exam Guide\n\n\n6 · SOFTWARE ENGINEERING & SDLC\n\n\nSoftware engineering = analysing user requirements, then de-          Models.\nsigning, building and testing software that satisfies them.           Waterfall — linear, each phase fixed, simple, easy to control;\nCharacteristics of good software (3): Operational, Transi-            but high risk, cannot accept changing requirements, no early\ntional, Maintenance.                                                  prototype. Good only for small, well-understood projects.\n                                                                      V-Model — waterfall bent into a V; every development stage\nFour key process activities: specification, development, vali-        has a matching test stage. Rigid.\ndation, evolution.                                                    Incremental — build in pieces, each piece delivered working.\nThe 7 SDLC phases — learn this order, it is asked almost every        Spiral — iterative with explicit risk analysis each loop; for\nyear:                                                                 large, high-risk projects.\n                                                                      RAD — quick prototypes, refined into production code; needs\n1. Planning & requirement analysis\n                                                                      reusable components.\n2. Defining requirements (produces the SRS)                           Prototype — build a sample first to fix the requirements.\n3. Designing the software                                             Agile — small incremental builds, each iteration 1–3\n4. Developing / coding                                                weeks. Phases: requirements gathering, design, construc-\n5. Testing                                                            tion/iteration, testing/QA, deployment, feedback. Methods:\n6. Deployment                                                         Scrum, Crystal, DSDM, FDD, Lean, XP.\n7. Maintenance                                                        Agile vs Waterfall (one line): Agile allows requirement\nUser acceptance is confirmed at the testing stage (UAT) before        change after development starts and tests alongside coding; Wa-\ndeployment.                                                           terfall is rigid and tests after the build step.\n\nRequirement engineering process (5): feasibility study →\nelicitation & analysis → specification (SRS) → validation →\nmanagement.\nFeasibility study (3 types): Technical (do we have the tech-\nnology?), Operational/Behavioural (will people actually use\nit?), Economic (will it pay?).\n\n\n\n   Black box                                 White box                                     Grey box\n\n   Internal code not known; only GUI         Internal code fully known (done by de-        Partial knowledge of internals\n   needed                                    veloper)\n   Not used for algorithm testing            Best suited for algorithm testing             Not used for algorithm testing\n   Least time-consuming                      Most time-consuming                           Less than white box\n   Tester, developer and end user can        Only tester and developer                     Tester, developer and end user\n   take part\n\n\nVerification vs Validation. Verification — “are we building the       Modularity. Splitting software into separately named, ad-\nproduct right?”, static testing, no code executed, comes un-          dressed modules that are integrated later. It is the property\nder QA, done first. Validation — “are we building the right           that makes a program intellectually manageable.\nproduct?”, dynamic testing, code is executed, comes under QC,         Advantages: parallel work by many people, reusable library rou-\ndone after verification.                                              tines, easier testing, more readable.\nAlpha vs Beta. Alpha — in-house, before release, uses both            Disadvantages: longer execution and compile time, more stor-\nblack and white box, long cycles. Beta — at the customer site,        age, inter-module communication problems.\nonly black box, a few weeks, at marketing time.                       Cohesion vs Coupling — the classic one-liner: Cohesion mea-\nLevels of testing. Unit → Integration → System → Accep-               sures the strength inside one module; Coupling measures the\ntance.                                                                dependence between modules. Good design = high cohesion,\n                                                                      low coupling.\n                                                                      SQA = the planned activities that make sure the process and\n                                                                      product meet the required standards. Six Sigma methodolo-\n                                                                      gies: DMAIC (improve existing) and DMADV (design new).\n\n\n\n\n                                                                  6",
+    "printed": 6,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 9,
+    "title": "Final exam checklist",
+    "bn": "নম্বর হারানোর ভুল",
+    "intro": "ছোট নিয়মের ভুলে পুরো সমাধান ভুল হতে পারে। উত্তর জমা দেওয়ার আগে কাঠামো ও হিসাব পরীক্ষা করুন।",
+    "points": [
+      "Gray order: 00,01,11,10",
+      "BCD-তে digit sum >9 বা carry হলে 6 যোগ",
+      "Fixed-width complement-এ bit width লিখুন",
+      "প্রশ্নে circuit চাইলে circuit-ও দিন"
+    ],
+    "memory": "আগে নিয়ম, শেষে যাচাই",
+    "text": "PART 0 — Final Revision Sheet                                                                              IT Written Exam Guide\n\n\n   Last five minutes — the things students most often lose marks on\n\n   • K-map headings must be 00, 01, 11, 10. Writing 00,01,10,11 destroys every answer on the page.\n   • In 2’s complement subtraction, discard the final carry — do not write it in the answer.\n   • For BCD addition, add 0110 only to a group that exceeds 9, then propagate the carry.\n   • “Simplify using K-map and draw the logic circuit” — the circuit carries half the marks. Always draw it.\n   • SDLC has 7 phases and SRS is produced in phase 2, not phase 1.\n   • Write difference questions as a two-column table, not a paragraph. Examiners award per row.\n\n\n\n\n                                                               7",
+    "printed": 7,
+    "chapter": 1,
+    "sections": []
+  },
+  {
+    "id": 10,
+    "title": "Linux kernel & architecture",
+    "bn": "Linux আসলে কী?",
+    "intro": "Computer-কে অফিস ভাবুন। Hardware হলো যন্ত্রপাতি, kernel হলো কাজ ভাগ করা manager, shell হলো আপনার নির্দেশ নেওয়ার জায়গা।",
+    "points": [
+      "Kernel memory, process ও device পরিচালনা করে",
+      "Linux kernel আর সম্পূর্ণ distribution এক জিনিস নয়",
+      "Shell একটি command interpreter",
+      "Application kernel-এর service ব্যবহার করে"
+    ],
+    "memory": "Hardware → Kernel → Shell → Application",
+    "text": "PART 1\n\n\n\nBASIC LINUX\n\n\n  What they ask from this chapter\n\n  • Write the Linux command for . . . [BTCL AME 2023, MGMCL AM(ICT) 2022, NESCO AM(ICT) 2021, BPSC SAE 2021, APSCL AE(ICT)\n  2021, BGDCL AE(CSE) 2021, BCC AP 2021, Titas Gas AE(CSE) 2024, Milk Vita AM(CSE) 2023]\n  • Difference between Linux and Unix / Linux and Windows\n  • What is kernel, shell, LILO, CLI, RPM, YUM, OpenSSH?\n  • Linux features and benefits (a standard 5-mark written question)\n\n\n\n1.1 What Linux actually is\n\n\nLinux is an operating system — or more precisely a kernel — distributed under an open-source licence.\nIts functionality list is very much like UNIX.\nThe kernel is the program at the heart of the system. It takes care of the fundamental work: letting the\nhardware communicate with the software, managing memory, processes and devices.\n  History — the one-line answer\n\n  In April 1991, Linus Torvalds, a 21-year-old computer science student at the University of\n  Helsinki, Finland, began a personal project to create a new operating system kernel. That project\n  became Linux.\n\nLinux system architecture\n\n                                                        Applications\n                                       User                 Shell                 User\n\n                                                            Kernel\n\n\n\n                                                          Hardware\n\n\n\n\n                                       User                                       User\n\n\n\nRead it from the inside out: the hardware is wrapped by the kernel, the kernel is wrapped by the shell\n(the command interpreter), then the applications, and the users sit outside everything. A user never\ntouches the hardware directly — every request passes inward through these layers.\n\n\n\n                                                              8",
+    "printed": 8,
+    "chapter": 2,
+    "sections": [
+      "1.1 What Linux actually is"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Linux features, distros & vocabulary",
+    "bn": "Distribution কেন দরকার?",
+    "intro": "শুধু kernel দিয়ে সাধারণ ব্যবহারকারী সব কাজ করতে পারেন না। Distribution kernel-এর সঙ্গে tools, package manager ও applications দেয়।",
+    "points": [
+      "Multiuser ও multitasking আলাদা বৈশিষ্ট্য",
+      "Ubuntu Debian-ভিত্তিক, Mint-এর সাধারণ edition Ubuntu-ভিত্তিক",
+      "RPM package format ও tooling, YUM dependency manager",
+      "LILO boot loader, OpenSSH secure remote access suite"
+    ],
+    "memory": "Kernel + tools = distro",
+    "text": "BASIC LINUX                                                                                         IT Written Exam Guide\n\n\nBenefits and features\n\nBenefits of using Linux                                       Linux features (memorise the 6 headings)\n• Open source — anyone with programming knowl-                • Multiuser capability — many users share the same\n  edge can modify it.                                           resources (memory, disk) from different terminals.\n• Easy to learn for beginners.                                • Multitasking — more than one function at a time, by\n• Millions of programs and applications available, most         dividing CPU time intelligently.\n  of them free.                                               • Portability — not about file size; it means it supports\n• The OS of choice for server environments, because             many different types of hardware.\n  of stability and reliability.                               • Security — three ways: authentication (password\n• Lightweight — needs far fewer resources than other            + login ID), authorisation (read/write/execute per-\n  operating systems.                                            mission), encryption (converts the file to unreadable\n• Very flexible — desktop, embedded systems and                 form).\n  servers.                                                    • GUI (X Window system) — Linux is command-line\n• Powerful networking support; client–server systems            based but can be made graphical by installing pack-\n  are easy to set up.                                           ages.\n• Multitasking — runs many tasks at once without              • File system — hierarchical; files and directories are\n  slowing down.                                                 arranged in a tree.\n\n\nVocabulary they ask for definitions\n\nKernel              The core program of the OS; manages hardware, memory and processes.\nShell               The command interpreter between the user and the kernel (e.g. bash).\nUtilities           Utility programs that give the user most of the OS functionality.\nLILO                Linux Loader — a boot loader that loads Linux into main memory to begin operation.\nCLI                 Command Line Interface — lets the user type declarative commands to instruct the computer.\nRPM                 Red Hat Package Manager — builds, installs, upgrades, queries and removes packages on\n                    Red Hat based systems (RHEL, Fedora, CentOS, Rocky, openSUSE).\nYUM                 Yellowdog Updater, Modified — an open-source package management utility that uses the\n                    RPM format (CentOS, RHEL, Fedora).\nOpenSSH             Open Secure Shell — a suite of tools giving secure communication over an unsecured network\n                    by encrypting traffic; used for remote login, file transfer and tunnelling.\nShell variable      A character string holding a value (number, filename, text). The shell can create, delete and\n                    assign variables.\n\n\nDistributions\n\nA Linux distribution is an OS built from the Linux kernel plus a package manager, GNU libraries and\ntools, a window system, a desktop environment and documentation.\n• Ubuntu — the most well known; built from Debian; easy graphical desktop, many pre-installed apps.\n• Linux Mint — based on Ubuntu, shares its repositories.\n• Debian — exists since 1993, releases slowly, therefore the most stable. Ubuntu is based on it.\n• Fedora / CentOS / RHEL — the Red Hat family. RHEL is the commercial one.\n\n\n1.2 Disks, partitions and file systems\n\n\n\n\n                                                          9",
+    "printed": 9,
+    "chapter": 2,
+    "sections": [
+      "1.2 Disks, partitions and file systems"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Disks, GPT, MBR & operating systems",
+    "bn": "ডিস্ক ভাগ করার ধারণা",
+    "intro": "Partition হলো বড় আলমারির আলাদা তাকের মতো। File system সেই তাকে তথ্য রাখার নিয়ম। LVM ও RAID ভিন্ন ব্যবস্থাপনার কৌশল।",
+    "points": [
+      "fdisk ও parted CLI, GParted GUI",
+      "MBR সাধারণ 512-byte sector-এ প্রায় 2 TiB সীমা, ৪ primary entry",
+      "GPT-তে GUID ও CRC, Windows-এ সাধারণত ১২৮ partition entry",
+      "LVM এবং RAID-এর একটিই বাধ্যতামূলক স্তরক্রম নেই"
+    ],
+    "memory": "Disk → partition → ব্যবহারের উপযোগী storage",
+    "text": "BASIC LINUX                                                                                           IT Written Exam Guide\n\n\nPartitioning tools                                              GPT vs MBR\n                                                                GPT = GUID Partition Table. It is part of the UEFI\n• fdisk — command-line tool for creating and manag-\n                                                                specification and replaces the older MBR (Master Boot\n  ing partitions.\n                                                                Record).\n• parted — also command-line, more versatile, sup-\n  ports larger disks.                                                         GPT                   MBR\n• gparted — the graphical version.\n                                                                Disk size     more than 2 TB        limited to 2 TB\nDisk management layers (answer in this order)                   Primary       up to 128             only 4\n• Physical disk (block device) — the raw disk, e.g.             partitions\n   /dev/sda .                                                   Identifiers   globally  unique      none\n                                                                              GUIDs\n• Partition level — a disk split into partitions, each\n                                                                Integrity     CRC32 checksum        none\n  with its own file system and mount point.\n• File system level — partitions formatted as ext4, xfs,        File permissions — 3 types\n  btrfs. Tools: mkfs, mount, umount.                            Read — can read the file and list the directory.\n• LVM — Logical Volume Management; an abstraction               Write — can write new files in the directory.\n  layer over disks. Components: pv (physical volume),           Execute — can access and run the file in a directory.\n  vg (volume group), lv (logical volume).\n• RAID — Redundant Array of Independent Disks;                  Open-source web servers: Apache HTTP Server, Nginx,\n  combines several disks into one logical unit for fault        Caddy.\n   tolerance and performance. Managed with mdadm .\n• Mounting — attaching a partition to a directory, e.g.\n   mount /dev/sda1 /mnt/mydisk .\n\n\n1.3 Linux vs Unix vs Windows\n\n\n\nLinux                                                      Unix\n\nOpen source, freely available to everyone                  Can only be used by its copyright holders\nIn great demand — any home user, developer or stu-         Developed mainly for servers, workstations and main-\ndent can use it                                            frames\nDeveloped by worldwide developers sharing code             Developed by AT&T Labs, commercial vendors and\n                                                           non-profits\nSupports more file systems than Unix                       Supports file systems, but fewer\nA Unix clone — behaves like Unix but contains none         Contains completely different code developed by\nof its code                                                AT&T\nLinux is just the kernel                                   Unix is a complete package of an operating system\n\n\nLinux                                                      Windows\n\nUsers can access and alter the kernel source code          Usually users cannot access the source code\nMany highly customisable distributions                     Fewer options to customise\nWritten in assembly language and C                         Written in C++ and assembly\nHuge community support through forums and online           Free and paid support, easily accessible online forum\nsearch\nDistributed under the GPL (GNU General Public Li-          Distributed under a proprietary commercial licence\ncense)\n\n\n                                                           10",
+    "printed": 10,
+    "chapter": 2,
+    "sections": [
+      "1.3 Linux vs Unix vs Windows"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Navigation & ls commands",
+    "bn": "Terminal-এ পথ খোঁজা",
+    "intro": "Terminal-এ current directory হলো এই মুহূর্তে আপনি যে folder-এ আছেন। Relative path সেখান থেকে গণনা হয়।",
+    "points": [
+      "pwd বর্তমান directory দেখায়",
+      "cd / root, cd ~ home, cd .. parent",
+      "ls -a hidden entry, ls -l বিস্তারিত",
+      "ls -R recursive, ls -lt সময় অনুযায়ী, ls -lh readable size"
+    ],
+    "memory": "pwd কোথায়, cd কোথায় যাব, ls কী আছে",
+    "text": "BASIC LINUX                                                                                IT Written Exam Guide\n\n\n1.4 The command reference\n\n\nThis section is where the marks are. Do not just read it — write each command out by hand once.\n\nNavigation and listing\n\npwd                             Print working directory — shows the full path from root to where you are.\ncd <dir>                        Change directory.\ncd ~                            Go to your home directory.\ncd --                           Go back to the previous directory.\ncd ..                           Go up to the parent directory.\ncd /                            Go to the system root directory.\ncd ~username                    Go to that user’s home directory.\ncd ’Dir name with space’        Quote the path, or escape with backslash: cd Dir\\ name .\ncd Dir1/Dir2/Dir3               Descend several sub-directories at once.\n\nls                              List the contents of the current directory.\nls -a                           Include hidden files (in Linux, hidden files begin with a dot).\nls -l                           Long list format (permissions, owner, size, date).\nls -li                          Prints the index (inode) number in the first column.\nls -p                           Marks directories with a trailing slash.\nls -r                           Print the list in reverse order.\nls -R                           Also display the contents of the sub-directories.\nls -lX                          Group files with the same extension together.\nls -lt                          Sort by time, most recently modified at the top.\nls -lh                          Long list with human-readable size — this is the “human readable size”\n                                answer.\n\n\n\n\n                                                    11",
+    "printed": 11,
+    "chapter": 2,
+    "sections": [
+      "1.4 The command reference"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Files, text tools & pipelines",
+    "bn": "ফাইলের সঙ্গে কাজ",
+    "intro": "Command-এর output আরেক command-এর input করা যায়। Pipe চিহ্ন (vertical bar) এই সংযোগ করে। এখানে উদাহরণগুলো শেখার জন্য; browser কোনো shell command চালায় না।",
+    "points": [
+      "mkdir folder, touch file, cp copy, mv move বা rename",
+      "rm -r directory-সহ মুছে দেয়",
+      "head -n 7 প্রথম ৭ লাইন, tail -n 5 শেষ ৫",
+      "grep শব্দ খোঁজে, cut column নেয়, tr বদলায়, wc গোনে",
+      "sed -n '11,15p' file নির্দিষ্ট লাইন দেখায়"
+    ],
+    "memory": "head শুরু, tail শেষ",
+    "text": "BASIC LINUX                                                                                   IT Written Exam Guide\n\n\nCreating, copying, deleting\n\nmkdir <dirname>                   Make a directory. (“Make a directory named PSC” → mkdir PSC )\nrmdir <dirname>                   Delete a directory — only if it is empty.\nrm -r <dirname>                   Delete a directory and all the files inside it.\nrm <file>                         Remove a file.\ntouch <file>                      Create an empty file. touch f1 f2 f3 creates several at once.\ncat <file>                        Display the contents of a file.\ncat > <file>                      Create a file and type into it; press Ctrl+D to save.\ntac <file>                        The reverse of cat — displays the file from the last line upwards.\ncp <old> <new>                    Copy a file within the same directory.\ncp -r PSC /home/admin             Copy a directory with all its contents into another directory.\nmv <old> <new>                    Move a file or rename it — one command does both.\nrename ’s/old/new/’ files Rename a large group of files at once.\n\n\nReading, filtering, searching\n\nhead <file>                       First 10 lines.\nhead -n 7 apscl.txt               First 7 lines — the exact APSCL 2021 answer.\ntail <file>                       Last 10 lines.\ntail -n 5 file.txt                Last five lines of a text file.\ntail -f logfile                   Last 10 lines of a log that is continuously updating (Titas Gas 2024 an-\n                                  swer).\nsed -n ’11,15p’ myfile            Show line 11 to line 15 of a file.\ngrep [options] pattern fileSearch a file for a pattern and print matching lines. grep = global search for\n                           regular expression and print out.\nhistory                           Show      all     the    recently    used    commands.               Combine:\n                                   history | grep ssh .\ncut -d ’,’ -f 2 file              Select a column. -d sets the delimiter, -f the column number.\ntr ’a-z’ ’A-Z’                    Translate file content, e.g. lower case to upper case.\nwc <file>                         Count lines, words and characters.\nfind .        -name file1.txt     Search for files in a directory hierarchy.\ncmp file1 file2                   Byte-by-byte comparison of two files.\ncksum README.txt                  Show the CRC checksum and byte count of a file.\n\n\n\n\n                                                      12",
+    "printed": 12,
+    "chapter": 2,
+    "sections": []
+  },
+  {
+    "id": 15,
+    "title": "Permissions, users & networking",
+    "bn": "কার কী অনুমতি?",
+    "intro": "Linux permissions তিন ভাগে লেখা হয়: owner, group, others। প্রতিটি ভাগে read, write, execute-এর মান যোগ হয়।",
+    "points": [
+      "rwx=7, rw-=6, r-x=5",
+      "chmod mode বদলায়, chown owner বদলায়",
+      "df -h filesystem space, ps process, top live process view",
+      "ip a address, ping reachability পরীক্ষা, ssh remote login",
+      "Ctrl+C interrupt, Ctrl+Z suspend, fg ফিরিয়ে আনে"
+    ],
+    "memory": "৪ পড়া + ২ লেখা + ১ চালানো",
+    "text": "BASIC LINUX                                                                                          IT Written Exam Guide\n\n\nPermissions, users, system\n\nchmod 777 myfile.txt                   Give read, write and execute to owner, group and others.\nchmod +rwx <file>                      Add all permissions. chmod -rwx removes them.\nchmod +x <file>                        Make a file executable. chmod -wx removes write and execute.\nchown user:group <file>                Change ownership and group — the “ownership and group permission” an-\n                                       swer.\nuseradd <user>                         Create a new user account (the “user creation” answer).\nuserdel <user>                         Delete a user account.\npasswd <user>                          Create or change a user’s password.\ndf      df -h                          Show disk space usage; -h makes it human readable.\nps      top                            Your active processes / all running processes.\nenv                                    List all current environment variables.\necho \"text\"                            Display a line of text.\ncal                                    Print a calendar.\nreboot        poweroff                 Restart / shut down the system.\n\n\nNetworking, transfer, compression\n\nip a or ip addr                        The modern replacement for ifconfig — assign an IP, enable or disable an\n                                       interface.\nifconfig                               Configure,          view          and      control        network         inter-\n                                       faces.                   sudo ifconfig eth0 up            /       down         /\n\n                                       sudo ifconfig eth0 172.16.25.125 .\nping <destination>                     Check connectivity between two nodes. Packet Internet Groper.\nssh user@host                          Create a remote connection through the SSH protocol.\nscp                                    Secure copy — remote file copy program.\nwget http://site/file.txt Download a file from a URL.\nhost <domain>                          Show the IP for a domain name and vice versa (a DNS lookup).\ngzip f1 f2                             Compress files; replaces the original with a .gz file.\nzcat <file.gz>                         Display a compressed file without unpacking it.\n\n   Keyboard shortcuts (a free MCQ mark)\n\n   Ctrl+C halt the current command         ·    Ctrl+Z stop it, resume with fg or bg         ·    Ctrl+D log out of\n\n   the session (same as exit )     ·    Ctrl+W erase one word        ·    Ctrl+U erase the whole line      ·   Ctrl+R\n   search and recall a recent command.\n\n\n\n\n                                                           13",
+    "printed": 13,
+    "chapter": 2,
+    "sections": []
+  },
+  {
+    "id": 16,
+    "title": "Linux written question",
+    "bn": "APSCL command সমস্যা",
+    "intro": "প্রশ্নে ছোট ছোট কাজের জন্য আলাদা command লিখতে হয়। Command মুখস্থের আগে command-এ filename কোথায় যায় বুঝুন।",
+    "points": [
+      "touch apscl.txt ফাইল তৈরি",
+      "chmod 777 apscl.txt সবার rwx",
+      "head -n 7 apscl.txt প্রথম ৭ লাইন",
+      "rm apscl.txt মুছে ফেলা",
+      "ls -a hidden file দেখায়, cp -r directory copy করে"
+    ],
+    "memory": "তৈরি → অনুমতি → পড়া → মুছা",
+    "text": "BASIC LINUX                                                                                          IT Written Exam Guide\n\n\n   Model answer — a real past question, fully solved\n\n   [APSCL AE(ICT) 2021] Write the Linux command: (a) create a file apscl.txt in the current location, (b) give\n   read, write and execute permission to all, (c) read the first 7 lines, (d) delete the file.\n   (a)    touch apscl.txt            or    cat > apscl.txt\n   (b)    chmod 777 apscl.txt\n   (c)    head -n 7 apscl.txt\n   (d)    rm apscl.txt\n\n   [BGDCL AE(CSE) 2021] List home directory files with all details and human-readable size, then display only the 10th\n   to 15th lines of the result, in one execution:\n   ls -lh ~ | sed -n ’10,15p’\n\n\n\n\n                                                           14",
+    "printed": 14,
+    "chapter": 2,
+    "sections": []
+  },
+  {
+    "id": 17,
+    "title": "Number systems & positional value",
+    "bn": "অবস্থান বদলালে মান বদলায়",
+    "intro": "Decimal 123-তে ১ মানে একশ। Binary-তে একই নিয়ম, তবে প্রতিটি স্থান ২-এর ঘাত। Fraction-এ ঘাত ঋণাত্মক হয়।",
+    "points": [
+      "Base b-তে digit অবশ্যই b-এর কম",
+      "integer place: b⁰,b¹,b²",
+      "fraction place: b⁻¹,b⁻²",
+      "1101.11₂=13.75₁₀",
+      "145.23₈=101.296875₁₀—বইয়ের 101.3 exact নয়"
+    ],
+    "memory": "digit × place value, তারপর যোগ",
+    "text": "PART 2\n\n\n\nDIGITAL ELECTRONICS I — NUMBERS,\nCODES, BOOLEAN\n\n\n   What they ask from this chapter\n\n   • Convert between decimal, binary, octal and hexadecimal [45th BCS CSE/ICT 2024, BPDB AE(CSE) 2024, BTCL JAM 2024, 18th\n   NTRCA 2024, BPSC AME 2021, DPDC 2020, ICT Ministry AP 2017]\n   • Write the 2’s complement of (+55)10 [45th BCS CSE 2024]\n   • BCD addition, Excess-3 code, parity for error detection [NPCNL JAM 2022, DPDC 2020, BB AP 2023]\n   • Simplify a Boolean function / state De Morgan’s law [45th BCS CSE 2024, BPSC AP 2023, BPSC ADA 2022, BPSC SAE 2021]\n\n\n\n2.1 The number systems\n\n\nA number system is a technique for representing and working with numbers. Number systems are\neither non-positional or positional. All four systems you need are positional, which simply means the\nplace of a digit decides its value.\n\n                  System           Base     Digits used\n\n                  Decimal            10     0–9\n                  Binary              2     0, 1 (a binary digit is a bit)\n                  Octal               8     0–7\n                  Hexadecimal        16     0–9 then A=10, B=11, C=12, D=13, E=14, F=15\n\n\n   Words they define in MCQs\n\n   Bit — the smallest unit of data, a single 0 or 1. Nibble — 4 bits (half a byte).            Byte — 8 bits (also called\n   an octet). Base — how many different digits the system has.\n\n\nRule 1 — any base → decimal\n\nMultiply each digit by baseposition , then add. In the integer part positions count 0, 1, 2 . . . from the\nright. In the fractional part they count −1, −2 . . . from the point rightwards.\n(1101.11)2 = (1 × 23 ) + (1 × 22 ) + (0 × 21 ) + (1 × 20 ) + (1 × 2−1 ) + (1 × 2−2 )\n              = 8 + 4 + 0 + 1 + 0.5 + 0.25 = (13.75)10\n(145.23)8 = (1 × 82 ) + (4 × 81 ) + (5 × 80 ) + (2 × 8−1 ) + (3 × 8−2 )\n             = 64 + 32 + 5 + 0.25 + 0.05 = (101.3)10\n\n(1A5.2)16 = (1 × 162 ) + (10 × 161 ) + (5 × 160 ) + (2 × 16−1 ) = 256 + 160 + 5 + 0.125 = (421.125)10\n\n\n\n                                                               15",
+    "printed": 15,
+    "chapter": 3,
+    "sections": [
+      "2.1 The number systems",
+      "Rule 1 — any base → decimal"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Decimal conversion & bit grouping",
+    "bn": "ভাগ ও গুণের দুই দিক",
+    "intro": "Integer-কে target base দিয়ে বারবার ভাগ করলে digit পাওয়া যায়। Fraction-কে base দিয়ে গুণ করলে পরের digit পাওয়া যায়।",
+    "points": [
+      "423₁₀=647₈",
+      "423.125₁₀=1A7.2₁₆",
+      "Octal-এর এক digit = ৩ bit, hex-এর এক digit = ৪ bit",
+      "point থেকে বাইরে grouping করুন, integer-এ বামে zero, fraction-এ ডানে zero",
+      "675.24₈=1BD.5₁₆"
+    ],
+    "memory": "Integer ভাগ, fraction গুণ",
+    "text": "DIGITAL ELECTRONICS I — NUMBERS, CODES, BOOLEAN                                                        IT Written Exam Guide\n\n\nRule 2 — decimal → any base\n\n   The two halves work in opposite directions — this is the step students get wrong\n\n   Integer part: divide repeatedly by the base. Collect the remainders and read them from bottom to top (last\n   remainder is the MSB).\n   Fraction part: multiply repeatedly by the base. Collect the integer parts and read them from top to bottom\n   (first one is the MSB).\n\nWorked example: (423.150)10 = (?)8 [BPDB AE(CSE) 2024]\n\nInteger part                                                    Fraction part\n423 ÷ 8 = 52 remainder 7 (LSB)                                  0.150 × 8 = 1.200 → 1 (MSB)\n52 ÷ 8 = 6 remainder 4                                          0.200 × 8 = 1.600 → 1\n6 ÷ 8 = 0 remainder 6 (MSB)                                     0.600 × 8 = 4.800 → 4\nRead bottom to top: (423)10 = (647)8                            0.800 × 8 = 6.400 → 6\n                                                                Read top to bottom: (0.150)10 = (0.1146 . . .)8\n\n\n∴ (423.150)10 = (647.1146 . . .)8\n\nWorked example: (423.125)10 = (?)16\n423 ÷ 16 = 26 r 7; 26 ÷ 16 = 1 r 10 (A); 1 ÷ 16 = 0 r 1 ⇒ (423)10 = (1A7)16\n0.125 × 16 = 2.00 → 2 ⇒ (0.125)10 = (0.2)16\n∴ (423.125)10 = (1A7.2)16\n\nRule 3 — binary ↔ octal ↔ hexadecimal\n\n   The grouping rule\n\n   Octal ↔ binary: group in 3 bits. Hexadecimal ↔ binary: group in 4 bits.\n   Always group outwards from the decimal point. If the last group is short, pad with zeros — on the left for\n   the integer part, on the right for the fractional part.\n   Octal ↔ hexadecimal has no direct route. Always go through binary.\n\nExample: (11110100010.01011101)2 = (?)16\n\n                                    0111     1010     0010      .   0101      1101\n                                      ↓        ↓        ↓             ↓         ↓\n                                      7     10 (A)      2       .     5      13 (D)\n\n∴ (11110100010.01011101)2 = (7A2.5D)16\n\nExample: (675.24)8 = (?)16 — go through binary.\nStep 1, octal to binary (3 bits each): 6 7 5 . 2 4 → 110 111 101 . 010 100\nStep 2, regroup that binary in 4 bits: 0001 1011 1101 . 0101 0000\nStep 3, read as hex: 1 B D . 5 0      ∴ (675.24)8 = (1BD.50)16\n\n\n2.2 Binary arithmetic and complements\n\n\n\n\n                                                           16",
+    "printed": 16,
+    "chapter": 3,
+    "sections": [
+      "Rule 2 — decimal → any base",
+      "Worked example: (423.150)10 = (?)8 [BPDB AE(CSE) 2024]",
+      "Worked example: (423.125)10 = (?)16",
+      "Rule 3 — binary ↔ octal ↔ hexadecimal",
+      "2.2 Binary arithmetic and complements"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Binary arithmetic & complements",
+    "bn": "একই adder দিয়ে বিয়োগ",
+    "intro": "Two’s complement হলো নির্দিষ্ট bit width-এ bit উল্টিয়ে ১ যোগ করা। এটিতে negative number রাখা ও subtraction করা যায়।",
+    "points": [
+      "1+1=10₂, 1+1+1=11₂",
+      "8-bit +55=00110111, negation=11001001",
+      "8-bit −108 representation=10010100",
+      "11−13=−2, 8-bit result 11111110",
+      "Signed overflow carry-out দেখে একা বোঝা যায় না"
+    ],
+    "memory": "Flip + 1, কিন্তু width আগে",
+    "text": "DIGITAL ELECTRONICS I — NUMBERS, CODES, BOOLEAN                                                   IT Written Exam Guide\n\n\nAddition rules                                                 Subtraction rules\n0+0=0                                                          0−0=0\n0+1=1                                                          1−0=1\n1+0=1                                                          0 − 1 = 1 borrow 1\n1 + 1 = 0 carry 1                                              1−1=0\n1 + 1 + 1 = 1 carry 1\n\nExample: (1011.0110)2 + (1101.0111)2 = (11000.1101)2 (check in decimal: 11.375 + 13.4375 = 24.8125).\nExample: (110101.101)2 − (010110.110)2 = (011111.001)2 .\n\n1’s and 2’s complement\n\n  The definitions, exactly as the examiner wants them\n\n  1’s complement — obtained by complementing (flipping) all the bits of a signed binary number. The 1’s\n  complement of a positive number gives a negative number, and vice versa.\n  2’s complement — obtained by adding 1 to the 1’s complement.\n\n                                      2’s complement = 1’s complement + 1\n\n  Taking either complement twice returns the original signed number.\n\nWorked example: 2’s complement of −108.\nSigned binary of 108 = 01101100\n1’s complement = 10010011\n2’s complement = 10010011 + 1 = 10010100\n\nWorked example: 2’s complement of (+55)10 [45th BCS CSE 2024]\n55 in 8-bit signed binary = 00110111\n1’s complement = 11001000\n2’s complement = 11001000 + 1 = 11001001\n\n  Subtraction using 2’s complement — the exam favourite\n\n  To compute A − B: take the 2’s complement of B, then add it to A. If a carry comes out of the last column,\n  discard it — the answer is positive. If there is no final carry, the answer is negative, and its magnitude is the\n  2’s complement of what you got.\n  Example: (+11)10 − (+13)10 . 11 = 00001011, 13 = 00001101.\n  2’s complement of 13 = 11110010 + 1 = 11110011.\n  00001011 + 11110011 = 11111110 — no final carry, so it is negative.\n  2’s complement of 11111110 = 00000001 + 1 = 00000010 = 2. Answer: −2.\n\n\n2.3 Binary codes\n\n\n\n\n                                                          17",
+    "printed": 17,
+    "chapter": 3,
+    "sections": [
+      "Worked example: 2’s complement of −108.",
+      "Worked example: 2’s complement of (+55)10 [45th BCS CSE 2024]",
+      "2.3 Binary codes"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "BCD, Excess-3 & character codes",
+    "bn": "পুরো সংখ্যা বনাম একেক digit",
+    "intro": "Binary পুরো সংখ্যাকে base-2-তে লেখে। BCD প্রতিটি decimal digit আলাদা ৪ bit-এ রাখে। তাই 13-এর BCD 0001 0011।",
+    "points": [
+      "BCD addition-এ >9 বা carry হলে 0110 যোগ",
+      "13+26=39 → 0011 1001",
+      "Excess-3-তে প্রতি decimal digit-এর সঙ্গে ৩ যোগ",
+      "Gray code-এ পরপর মানে এক bit বদলায়",
+      "ASCII মূলত 7-bit, Unicode নির্দিষ্ট 16-bit নয়"
+    ],
+    "memory": "BCD digit ধরে, binary সংখ্যা ধরে",
+    "text": "DIGITAL ELECTRONICS I — NUMBERS, CODES, BOOLEAN                                                  IT Written Exam Guide\n\n\n\n\nBCD (8421)            Binary Coded Decimal. Each decimal digit is written as its own 4-bit group. It is a weighted\n                      code. Fast and efficient for converting decimal to binary.\nExcess-3              BCD + 0011. It has no weights, so it is an un-weighted code, and it is self-\n                      complementing.\nGray code             Only one bit changes between two consecutive values. This is why K-map headings run\n                      00, 01, 11, 10 — adjacent cells differ in one variable only.\nASCII                 American Standard Code for Information Interchange, invented by ANSI. Uses 7 or 8 bits\n                      per character.\nUnicode               Uses 16 bits, so it represents more than 65,000 characters — far more than ASCII.\nParity bit            An extra check bit added to a block so that the total number of 1s becomes even (even\n                      parity) or odd (odd parity). It is the simplest error-detecting code.\n\n\n\n                             Decimal     8421 (BCD)      2421    84-2-1    Excess-3\n\n                                 0           0000        0000     0000       0011\n                                 1           0001        0001     0111       0100\n                                 2           0010        0010     0110       0101\n                                 3           0011        0011     0101       0110\n                                 4           0100        0100     0100       0111\n                                 5           0101        1011     1011       1000\n                                 6           0110        1100     1010       1001\n                                 7           0111        1101     1001       1010\n                                 8           1000        1110     1000       1011\n                                 9           1001        1111     1111       1100\n\n\nBCD addition\n\n   The BCD addition rule\n\n   Add the two BCD numbers 4 bits at a time. If any 4-bit group produces a result greater than 9 (1001), or\n   produces a carry out, then add 0110 (decimal 6) to that group and carry into the next group. If every group\n   is 9 or less, the answer is already valid — add nothing.\n\nWorked example: 00010011 + 00100110 [NPCNL, JAM 2022]\n                 0001 0011   = (13)10\n             +   0010 0110   = (26)10\n\n                 0011 1001   = (39)10\nCheck each group: 0011 = 3 and 1001 = 9. Both are ≤ 9, so no correction is needed. The answer 0011 1001 is\na valid BCD number, and 13 + 26 = 39 confirms it.\n\nExcess-3 example: what is the Excess-3 code of 1010? [DPDC 2020]\n1010 is not a valid BCD digit on its own; treated as decimal 10, the digits are 1 and 0, whose Excess-3 codes are\n0100 and 0011, giving 0100 0011. For a single decimal digit, just add 0011: e.g. decimal 786 → 1010 1011 1001.\n\n\n\n\n                                                        18",
+    "printed": 18,
+    "chapter": 3,
+    "sections": [
+      "Worked example: 00010011 + 00100110 [NPCNL, JAM 2022]"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Parity, ASCII & Boolean laws",
+    "bn": "ত্রুটি ধরা আর সংশোধন আলাদা",
+    "intro": "Parity bit মোট ১-এর সংখ্যা even বা odd করে। Receiver সংখ্যা গুনে mismatch পেলে error বোঝে; কোন bit বদলেছে তা জানতে পারে না।",
+    "points": [
+      "1011-এর even parity bit 1 → 10111",
+      "10110-তে তিনটি 1, তাই even parity fail",
+      "Delta ASCII hex: 44 65 6C 74 61",
+      "A+A=A, A+A′=1, AA′=0",
+      "De Morgan-এ NOT ছড়িয়ে AND/OR উল্টায়"
+    ],
+    "memory": "Bar ভাঙুন, sign পাল্টান",
+    "text": "DIGITAL ELECTRONICS I — NUMBERS, CODES, BOOLEAN                                                     IT Written Exam Guide\n\n\nParity for error detection\nThe parity method adds one extra bit to the end of a data block. The bit is set to 0 or 1 so that the total count of 1s\nis even (for even parity). The receiver counts the 1s in what arrived; an odd count means an error occurred.\nExample: send the 4-bit block 1011. It contains three 1s, so the parity bit is set to 1, and the transmitted block\nis 10111 (now four 1s — even). If 10110 arrives, it has two 1s — even — so it is assumed error-free. If 10101\narrives, it has three 1s — odd — so an error is detected.\n\nASCII bit string of “Delta” [BB AP 2023]: the ASCII codes are 68 65 6C 74 61 (hex) = 01000100 01100101 01101100\n01110100 01100001.\n\n\n2.4 Boolean algebra\n\n\nBoolean algebra deals with binary variables and binary values. It was developed by George Boole in\n1854. It is also called binary algebra or logical algebra.\n\nThe laws — learn all of them, they are worth easy marks\n\n\nLogical OR                   Logical AND                  Associative                     Distributive\n\nA+0=A                        A·1=A                        A + (B + C) = (A + B) + C       A(B + C) = AB + AC\nA+1=1                        A·0=0                        A · (B · C) = (A · B) · C       A + BC = (A + B)(A + C)\nA+A=A                        A·A=A\nA+A=1                        A·A=0                        De Morgan                       Commutative\nA=A                          A + AB = A                   A+B =A·B                        A+B =B+A\n                             A + AB = A + B               A·B =A+B                        A·B =B·A\n\n   De Morgan in plain language\n\n   “Break the bar and change the sign.” NOT(A OR B) is the same as (NOT A) AND (NOT B); and NOT(A AND\n   B) is the same as (NOT A) OR (NOT B).\n   Everyday example: “It is not the case that it is raining or windy” means exactly “it is not raining and it is not\n   windy”.\n\n\nProofs they ask for\n\nProve A + 1 = 1                                                Prove A + A = 1\nIf A = 0: LHS = 0 + 1 = 1 = RHS                                If A = 0: LHS = 0 + 1 = 1 = RHS\nIf A = 1: LHS = 1 + 1 = 1 = RHS (proved)                       If A = 1: LHS = 1 + 0 = 1 = RHS (proved)\n\nWorked simplifications from past papers\n\n   Example 1 — F = A′ B ′ C + A′ BC + AB ′\n\n   [45th BCS, CSE 2024]\n   F = A BC + ABC + AB\n   Take AC common from the first two terms:\n   = AC(B + B) + AB\n   = AC(1) + AB                                                                                  (since B + B = 1)\n\n\n                                                          19",
+    "printed": 19,
+    "chapter": 3,
+    "sections": [
+      "2.4 Boolean algebra",
+      "Example 1 — F = A′ B ′ C + A′ BC + AB ′"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Boolean examples, SOP & POS",
+    "bn": "১-এর সারি নাকি ০-এর সারি?",
+    "intro": "Minterm একটি input row-তে ১ হয়। Maxterm একটি row-তে ০ হয়। SOP-এ product-গুলো OR হয়, POS-এ sum-গুলো AND হয়।",
+    "points": [
+      "A′B′C+A′BC+AB′=A′C+AB′",
+      "AB′+AC+BC=AB′+BC, consensus term AC বাদ যায়",
+      "(x+y+xy)(x+z)=x+yz",
+      "Σm(0,2,3,5,7)=ΠM(1,4,6) তিন variable-এ",
+      "Short term standard করতে missing variable-এর (V+V′) গুণ করুন"
+    ],
+    "memory": "SOP ১ ধরে, POS ০ ধরে",
+    "text": "DIGITAL ELECTRONICS I — NUMBERS, CODES, BOOLEAN                                                 IT Written Exam Guide\n\n\n\n   = AC + AB\n\n\n   Example 2 — Y = AB + (A + B)C\n\n   [BPSC, ADA 2022]\n   Y = AB + (A + B)C = AB + AC + BC\n   This is already minimal in three terms; if a consensus removal is asked, note that BC is the consensus of AB\n   and AC only when the literals match — here they do not, so Y = AB + AC + BC .\n\n   Example 3 — (x + y + xy)(x + z)\n\n   [BPSC AME 2021]\n   First simplify inside: x + y + xy = x + y(1 + x) = x + y                                   (since 1 + x = 1)\n   So the expression is (x + y)(x + z).\n   Using A + BC = (A + B)(A + C) read backwards with A = x, B = y, C = z:\n   (x + y)(x + z) = x + yz\n\n   Example 4 — xyz + xyz + xy\n\n   [BPSC AP 2021]\n   = xz(y + y) + xy = xz(1) + xy = xz + xy\n\n\n   Example 5 — prove A + AB = A + B\n\n   A + AB = (A + A)(A + B)                                             [distributive A + BC = (A + B)(A + C)]\n   = 1 · (A + B) = A + B\n   This identity appears constantly. Memorise it in both directions.\n\n\nMinterms, maxterms, SOP and POS\n\nSOP (Sum of Products) — terms are ANDed inside and ORed outside, e.g. F = AB + AC. It is written with Σm\nand built from minterms (rows where the output is 1). In a minterm a variable appears plain if it is 1 and barred\nif it is 0.\nPOS (Product of Sums) — terms are ORed inside and ANDed outside, e.g. F = (A + B)(A + C). It is written with\nΠM and built from maxterms (rows where the output is 0). In a maxterm a variable appears plain if it is 0 and\nbarred if it is 1 — the opposite of a minterm.\n\nConverting SOP → POS. Change the symbol Σ to Π, then write the index numbers that were missing from the\nSOP list.\nExample: F = Σm(0, 2, 3, 5, 7) over three variables. The missing indexes are 1, 4 and 6, so F = ΠM (1, 4, 6).\nWriting them out: 1 = (x + y + z), 4 = (x + y + z), 6 = (x + y + z), giving F = (x + y + z)(x + y + z)(x + y + z).\n\nNon-standard to standard SOP. Multiply each short term by the missing variable in the form (X + X).\nExample: F = AB + AC + BC\n= AB(C + C) + A(B + B)C + (A + A)BC\n= ABC + ABC + ABC + ABC + ABC + ABC\n= ABC + ABC + ABC + ABC                                                  (duplicates removed, since X + X = X)\n\n\n\n\n                                                         20",
+    "printed": 20,
+    "chapter": 3,
+    "sections": [
+      "Example 2 — Y = AB + (A + B)C",
+      "Example 3 — (x + y + xy)(x + z)",
+      "Example 4 — xyz + xyz + xy",
+      "Example 5 — prove A + AB = A + B"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "K-map foundations & Gray order",
+    "bn": "পাশের ঘরে একটিই বদলায়",
+    "intro": "K-map truth table-কে এমনভাবে সাজায় যাতে পাশের ঘরে এক variable বদলায়। দুই ঘর এক করলে বদলে যাওয়া variable বাদ যায়।",
+    "points": [
+      "2-variable 2×2, 3-variable 2×4, 4-variable 4×4",
+      "Gray heading 00,01,11,10",
+      "চার variable row: 0 1 3 2 / 4 5 7 6 / 12 13 15 14 / 8 9 11 10",
+      "দুই প্রান্তও প্রতিবেশী"
+    ],
+    "memory": "এক bit বদল → এক literal বাদ",
+    "text": "PART 3\n\n\n\nTHE K-MAP TUTORIAL\n\n\n  Why this chapter matters more than any other\n\n  K-map questions appear in almost every paper, they carry high marks, and — unlike theory — they are fully mechanical.\n  There is nothing to understand deeply and nothing to remember creatively. If you follow eight fixed steps, you get full\n  marks every single time. This is the chapter that turns a weak student into a passing one.\n  [38th BCS] [Bank SO(AME) 2021] [BPSC ADA 2022] [JBL SO(ANE) 2020] [BOF AE(CSE) 2021] [BUET M.Sc. May 2016]\n\n\n\n3.1 Lesson 1 — what a K-map is and why it works\n\n\nThe Karnaugh map is a method of simplifying Boolean expressions. It is a table, like a truth table, but\narranged so that physically adjacent cells differ in exactly one variable. That single fact is the whole\ntrick: when two neighbouring cells are both 1, the variable that changed between them can be thrown\naway.\n  Why the headings are 00, 01, 11, 10 and never 00, 01, 10, 11\n\n  Look at the change from one heading to the next: 00 → 01 (one bit changed), 01 → 11 (one bit changed),\n  11 → 10 (one bit changed), and wrapping round, 10 → 00 (one bit changed). This is Gray code order.\n  If you wrote 00, 01, 10, 11 instead, then 01 → 10 changes two bits, adjacency breaks, and every grouping on\n  your page becomes wrong. This one mistake fails more students than any other.\n\n\nThe three grids\n                                                                                                  4 variables\n                                                                                                            CD\n              2 variables                              3 variables\n                                                                                               AB 00   01        11   10\n                       B                                         BC\n                                                                                               00 m0   m1 m3 m2\n               A   0       1                       A   00   01        11   10\n\n               0   m0 m1                           0   m0 m1 m3 m2                             01 m4   m5 m7 m6\n\n               1   m2 m3                           1   m4 m5 m7 m6                             11 m12 m13 m15 m14\n\n                                                                                               10 m8   m9 m11 m10\n\n\n\nNotice the minterm numbers are not in reading order — they follow the Gray headings. For a 4-variable map,\nmemorise the layout as four rows: 0 1 3 2 / 4 5 7 6 / 12 13 15 14 / 8 9 11 10. Write this layout down first,\nevery time, before you do anything else.\n\n\n3.2 Lesson 2 — the eight rules\n\n\n\n                                                             21",
+    "printed": 21,
+    "chapter": 4,
+    "sections": [
+      "3.1 Lesson 1 — what a K-map is and why it works",
+      "3.2 Lesson 2 — the eight rules"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Grouping rules & first SOP",
+    "bn": "বড় group ছোট expression",
+    "intro": "K-map-এ group করতে হবে rectangle-এ এবং cell সংখ্যা 1,2,4,8,16 হতে হবে। Diagonal বা L shape বৈধ নয়।",
+    "points": [
+      "প্রতিটি target cell অন্তত একবার cover করুন",
+      "Overlap করা যায়, group যত বড় তত ভালো",
+      "X শুধু group বড় করতে ব্যবহার করুন",
+      "SOP-এ constant 1 plain, constant 0 complemented",
+      "POS-এ literal polarity বিপরীত"
+    ],
+    "memory": "Double group, drop one variable",
+    "text": "THE K-MAP TUTORIAL                                                                                       IT Written Exam Guide\n\n\n\n\n   The procedure. Do not deviate from it.\n\n   Step 1. Draw the correct grid: 2 variables = 2 × 2, 3 variables = 2 × 4, 4 variables = 4 × 4.\n   Step 2. Write the headings in Gray order: 00, 01, 11, 10.\n   Step 3. Fill the map. For SOP (Σm, minterms), write 1 in each listed cell. For POS (ΠM , maxterms), write 0\n   in each listed cell. Write X in every don’t-care cell.\n   Step 4. Group only in powers of two: 16, 8, 4, 2, or 1. A group must be a rectangle or square — never\n   diagonal, never L-shaped.\n   Step 5. Make each group as large as possible, and make as few groups as possible. Groups may overlap.\n   Every 1 must end up inside at least one group.\n   Step 6. The map wraps around. The left column is adjacent to the right column; the top row is adjacent to\n   the bottom row; and the four corners together form one valid group of four.\n   Step 7. An X may be used to make a group bigger, or ignored entirely. Never form a group made only of X\n   cells.\n   Step 8. Read each group. Keep the variables that stay the same across the whole group; drop the ones that\n   change.\n      For SOP: a variable that stays 1 is written plain (A); one that stays 0 is written barred (A). Multiply within\n   a group, add the groups.\n      For POS: the opposite — a variable that stays 0 is written plain, one that stays 1 is barred. Add within a\n   group, multiply the groups.\n\n   How big a group, how many literals?\n\n   In a 4-variable map: a group of 1 cell leaves 4 literals; 2 cells leaves 3 literals; 4 cells leaves 2 literals; 8 cells\n   leaves 1 literal; 16 cells means F = 1.\n   Every time you double the group size, you delete one more variable. That is exactly why bigger groups are\n   better — the answer gets shorter.\n\n\n3.3 Lesson 3 — your first SOP map, done slowly\n\n\nProblem: Simplify f (W, X, Y, Z) = W XY + W Y + W Y Z using a K-map.\n\nStep A — expand every term to full minterms\n\nEach term is short, so multiply by the missing variables in the (V + V ) form:\nW XY (Z + Z) + W Y (X + X) + W Y Z(X + X)\n= W XY Z + W XY Z + W XY + W XY + W XY Z + W XY Z\nExpanding W XY and W XY over Z as well gives the full minterm list: m2 , m6 , m8 , m9 , m11 , m10 , m14 , m15 .\n\n\n\n\n                                                             22",
+    "printed": 22,
+    "chapter": 4,
+    "sections": [
+      "3.3 Lesson 3 — your first SOP map, done slowly"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "SOP solution & POS map",
+    "bn": "একই map, ভিন্ন target",
+    "intro": "SOP-এ ১ group করেন, POS-এ ০। একই variable constant হলেও দুই পদ্ধতিতে লেখার নিয়ম উল্টো।",
+    "points": [
+      "Σm(2,6,8,9,10,11,14,15) → AB′+AC+CD′",
+      "ΠM(0,1,2,4) → (A+B)(A+C)(B+C)",
+      "SOP-এ group-এর ভিতর AND",
+      "POS-এ group-এর ভিতর OR",
+      "POS শূন্যকে নিষিদ্ধ করার clause বানায়"
+    ],
+    "memory": "SOP product যোগ, POS sum গুণ",
+    "text": "THE K-MAP TUTORIAL                                                                                                  IT Written Exam Guide\n\n\nStep B — fill the grid\n\n                                         YZ\n                  WX 00             01        11   10\n\n                     00    0         0        0    1              Remember the row order is W X = 00, 01, 11, 10 and the column\n                     01    0         0        0    1              order Y Z = 00, 01, 11, 10. Place a 1 in each cell whose minterm\n                                                                  number appears in the list. Leave everything else 0.\n                     11    0         0        1    1\n\n                     10    1         1        1    1\n\n\nStep C — group and read\nGroup 1 (four cells) — the whole bottom row, W X = 10, across all Y Z. W stays 1, X stays 0, Y and Z both\nchange ⇒ term = W X.\nGroup 2 (four cells) — the right-hand two columns of the bottom two rows (W X = 11 and 10, Y Z = 11 and 10).\nHere W = 1 throughout and Y = 1 throughout; X and Z change ⇒ term = W Y .\nGroup 3 (four cells) — the Y Z = 10 column, all four rows. Y stays 1, Z stays 0 ⇒ term = Y Z.\n\n∴ f = WX + WY + Y Z\n\nThree terms instead of three long ones — and notice the answer is shorter than the question. That is what a correct\nK-map always does.\n\n\n3.4 Lesson 4 — a POS map (zeros instead of ones)\n\n\nProblem: Simplify f (X, Y, Z) = ΠM (0, 1, 2, 4) using a K-map.\nThe symbol ΠM tells you this is product of maxterms, so you write 0 in cells 0, 1, 2 and 4 and leave the rest\nblank.\n\n                               YZ\n             X   00       01        11    10            There is no way to group eight zeros or four zeros here. There are exactly\n             0   0        0                   0         three groupings of two adjacent zeros, and after those three groups no single\n                                                        zero is left ungrouped.\n             1   0\n\n\nGroup 1 — cells m0 and m1 (top row, Y Z = 00 and 01): X = 0, Y = 0, Z changes. For POS, 0 becomes plain:\n⇒ (X + Y ).\nGroup 2 — cells m0 and m2 (top row, Y Z = 00 and 10): X = 0, Z = 0, Y changes ⇒ (X + Z). Written in the\nstandard order this is (Z + X).\nGroup 3 — cells m0 and m4 (column Y Z = 00, both rows): Y = 0, Z = 0, X changes ⇒ (Y + Z).\n\n∴ f = (X + Y )(Y + Z)(Z + X)\n\n   The single thing that goes wrong in POS problems\n\n   In SOP you write a barred variable when the value is 0. In POS you write a plain variable when the value is\n   0. It is reversed. Write “POS ⇒ reversed” at the top of your answer sheet before you start.\n\n\n3.5 Lesson 5 — don’t-care conditions\n\n                                                                       23",
+    "printed": 23,
+    "chapter": 4,
+    "sections": [
+      "3.4 Lesson 4 — a POS map (zeros instead of ones)",
+      "3.5 Lesson 5 — don’t-care conditions"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Don’t-care worked examples",
+    "bn": "অজানা নয়, ব্যবহার-স্বাধীন",
+    "intro": "কিছু input বাস্তবে আসে না। সেগুলো output ০ বা ১ ধরা যায়—যেটি expression সহজ করে। তবে প্রয়োজনীয় ১ বা ০ বদলানো যায় না।",
+    "points": [
+      "BCD-তে 10–15 invalid code",
+      "Excess-3-তে 0,1,2,13,14,15 unused",
+      "Σm(1,5,6,12,13,14)+d(4) → BC′+BD′+A′C′D",
+      "দ্বিতীয় example-এর উত্তর solver-এ truth table দিয়ে যাচাই করুন",
+      "শুধু X নিয়ে group বানাবেন না"
+    ],
+    "memory": "X সাহায্য করে, বাধ্য করে না",
+    "text": "THE K-MAP TUTORIAL                                                                                        IT Written Exam Guide\n\n\n\n\nThe don’t care condition says some input combinations can never occur, so you are free to treat those\ncells as either 0 or 1 — whichever makes your group bigger. They are marked X.\nWhere do they come from? Invalid combinations. In BCD, the codes 1010 to 1111 are don’t cares because no\ndecimal digit uses them. In Excess-3, the don’t cares are 0000, 0001, 0010, 1101, 1110 and 1111.\n\nWorked example 1\n\nProblem: Minimise F = Σm(1, 5, 6, 12, 13, 14) + d(4) in SOP minimal form.\n\n                              CD\n               AB 00     01        11   10       Cells 1, 5, 13 hold 1; cells 6, 14, 12 hold 1; cell 4 holds X.\n                00   0   1         0    0        Group 1 — m1 , m5 plus the X at m4 lets us take m4 , m5 , m12 , m13 as\n                01   X   1         0    1        a block of four.\n                                                 Group 2 — m6 and m14 (a pair).\n                11   1   1         0    1\n                                                 Group 3 — m12 and m13 combine upward with m4 , m5 .\n                10   0   0         0    0\n\n\nReading the maximal groups:\n• m4 , m5 , m12 , m13 : B = 1, C = 0 throughout, A and D change ⇒ BC\n• m12 , m13 , m14 region grouped as m12 , m13 with m4 , m5 already covered; the pair m6 , m14 gives B = 1, C = 1,\n  D = 0 ⇒ BCD, which merges with m12 , m13 as BD\n• m1 , m5 : A = 0, C = 0, D = 1 ⇒ A CD\n\n∴ F = BC + BD + A CD\n\nWorked example 2\n\nProblem: Minimise F (A, B, C, D) = Σm(1, 2, 6, 7, 8, 13, 14, 15) + d(3, 5, 12) in SOP minimal form.\n\n                              CD\n               AB 00     01        11   10\n                                                 Use every X that helps. The X at m3 joins m1 , m2 , m7 ; the X at m5\n                00   0   1         X    1\n                                                 joins m7 , m13 , m15 ; the X at m12 joins m13 , m14 , m15 .\n                01   0   X         1    1\n                                                 Take the largest rectangles you can draw, then stop as soon as every 1\n                11   X   1         1    1        is covered.\n                10   1   0         0    0\n\n\n∴ F = AC D + AD + AC + AB\n\n(The published answer to this past question is written as F = ACD + AD + AC + AB; if your grouping produces\nan equivalent form with the same number of terms and literals, it is also correct — K-map answers are not always\nunique, and examiners accept any minimal form.)\n\n\n3.6 Lesson 6 — the wrap-around, which everyone forgets\n\n\n\n\n                                                         24",
+    "printed": 24,
+    "chapter": 4,
+    "sections": [
+      "Worked example 1",
+      "Worked example 2",
+      "3.6 Lesson 6 — the wrap-around, which everyone forgets"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Wrap-around & past K-maps",
+    "bn": "প্রান্তগুলো যুক্ত",
+    "intro": "কাগজে দূরে দেখা cell K-map-এ পাশাপাশি হতে পারে। চার কোণা একটি group হতে পারে, কারণ map দুই দিকে wrap করে।",
+    "points": [
+      "Corners m0,m2,m8,m10 → B′D′",
+      "Σm(0,3,5,7) → BC+AC+A′B′C′",
+      "Σm(3,5,7,9,11,13,14,15) → CD+BD+AD+ABC",
+      "প্রতিটি group-এর constant bits লিখে term বের করুন"
+    ],
+    "memory": "Map-কে গোল করে জোড়া ভাবুন",
+    "text": "THE K-MAP TUTORIAL                                                                                IT Written Exam Guide\n\n\n\n\n                                             Those four 1s are in the four corners. They look separated, but on\n                                             a K-map the left edge touches the right edge and the top touches the\n                             CD\n                                             bottom — the map is really a doughnut. So these four cells are one\n               AB 00    01        11   10\n                                             legal group of four.\n               00   1   0         0    1\n                                             Reading it: B = 0 throughout and D = 0 throughout; A and C\n               01   0   0         0    0     change.\n               11   0   0         0    0     ⇒ F =BD\n               10   1   0         0    1     If you had grouped them as four separate single cells you would have\n                                             written four 4-literal terms instead of one 2-literal term — and lost\n                                             most of the marks.\n\n3.7 Lesson 7 — full past questions, solved\n\n\n\n  Q1. Simplify f (A, B, C) = ABC + ABC + ABC + ABC\n\n  [38th BCS]\n  The minterms are m0 , m3 , m5 , m7 .\n\n                                                                 BC\n                                                  A    00   01        11   10\n\n                                                  0    1    0         1    0\n\n                                                  1    0    1         1    0\n\n  Group 1 — m3 and m7 (column BC = 11, both rows): B = 1, C = 1, A changes ⇒ BC.\n  Group 2 — m5 and m7 (row A = 1, columns 01 and 11): A = 1, C = 1, B changes ⇒ AC.\n  Group 3 — m0 alone: A = 0, B = 0, C = 0 ⇒ A B C.\n  ∴ f = BC + AC + A B C\n\n\n  Q2. Simplify using K-map: F (W, X, Y, Z) = Σ(3, 5, 7, 9, 11, 13, 14, 15)\n\n  [Bank SO(AME) 2021]\n\n                                                                 YZ\n                                                 WX 00      01        11   10\n\n                                                  00   0    0         1    0\n\n                                                  01   0    1         1    0\n\n                                                  11   0    1         1    1\n\n                                                  10   0    1         1    0\n\n  Group 1 — the whole Y Z = 11 column (m3 , m7 , m15 , m11 ): Y = 1, Z = 1 ⇒ Y Z.\n  Group 2 — m5 , m7 , m13 , m15 (columns 01 and 11, rows 01 and 11): X = 1, Z = 1 ⇒ XZ.\n  Group 3 — m9 , m11 , m13 , m15 (columns 01 and 11, rows 11 and 10): W = 1, Z = 1 ⇒ W Z.\n  Group 4 — m14 , m15 (row W X = 11, columns 11 and 10): W = 1, X = 1, Y = 1 ⇒ W XY .\n  ∴ F = Y Z + XZ + W Z + W XY\n\n\n                                                            25",
+    "printed": 25,
+    "chapter": 4,
+    "sections": [
+      "3.7 Lesson 7 — full past questions, solved",
+      "Q1. Simplify f (A, B, C) = ABC + ABC + ABC + ABC",
+      "Q2. Simplify using K-map: F (W, X, Y, Z) = Σ(3, 5, 7, 9, 11, 13, 14, 15)"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Logic circuit & 2-bit comparator",
+    "bn": "কে বড় তা bit দিয়ে বোঝা",
+    "intro": "দুই bit-এর A ও B তুলনায় প্রথমে high bit দেখুন। সমান হলে low bit সিদ্ধান্ত দেয়। Truth table থেকে minterm বের করা নিরাপদ।",
+    "points": [
+      "Σm(0,2,3,4,7) → A′C′+B′C′+BC",
+      "2-bit A>B-এর true row ৬টি, ১০টি নয়",
+      "A1A0B1B0 order-এ minterm 4,8,9,12,13,14",
+      "F=A1B1′+A0B1′B0′+A1A0B0′",
+      "প্রতিটি product-এর জন্য AND, ফলগুলো OR করুন"
+    ],
+    "memory": "High bit আগে, tie হলে low bit",
+    "text": "THE K-MAP TUTORIAL                                                                          IT Written Exam Guide\n\n\n  Q3. Simplify F = ABC + ABC + ABC + ABC + ABC with logic circuit\n\n  [JBL SO(ANE) 2020]\n  Minterms: m0 , m2 , m3 , m4 , m7 .\n\n                                                               BC\n                                               A     00   01        11    10\n\n                                               0     1    0         1     1\n\n                                               1     1    0         1     0\n\n\n  Group 1 — m0 , m2 (A = 0, columns 00 and 10, i.e. C = 0): ⇒ A C.\n  Group 2 — m0 , m4 (column BC = 00, both rows): B = 0, C = 0 ⇒ B C.\n  Group 3 — m3 , m7 (column BC = 11, both rows): B = 1, C = 1 ⇒ BC.\n  ∴ F = A C + B C + BC\n  Now draw the circuit — this half of the question carries its own marks:\n\n                                       A, C   AND\n\n\n                                       B, C   AND                         OR    F\n\n                                       B, C   AND\n\n\n\n  Q4. A comparator: A = A1 A0 , B = B1 B0 , output F = 1 when A > B\n\n  [BPSC SAE 2021]\n  There are 16 input combinations. A > B is true for these ten: (01>00), (10>00), (10>01), (11>00), (11>01),\n  (11>10) — as minterms of A1 A0 B1 B0 these are m4 , m8 , m9 , m12 , m13 , m14 .\n\n                                                              B1 B0\n                                              A1 A0 00     01        11    10\n\n                                                00    0    0         0     0\n\n                                                01    1    0         0     0\n\n                                                11    1    1         0     1\n\n                                                10    1    1         0     0\n\n\n  Group 1 — m4 , m12 : A0 = 1, B1 = 0, B0 = 0 ⇒ A0 B1 B0 , which enlarges to A0 B1 when joined with m13 .\n  Group 2 — m8 , m9 , m12 , m13 : A1 = 1, B1 = 0 ⇒ A1 B1 .\n  Group 3 — m12 , m14 : A1 = 1, A0 = 1, B0 = 0 ⇒ A1 A0 B0 .\n  ∴ FA>B = A1 B1 + A0 B1 B0 + A1 A0 B0\n\n\n\n3.8 Lesson 8 — your self-check list\n\n\n\n\n                                                          26",
+    "printed": 26,
+    "chapter": 4,
+    "sections": [
+      "Q3. Simplify F = ABC + ABC + ABC + ABC + ABC with logic circuit",
+      "Q4. A comparator: A = A1 A0 , B = B1 B0 , output F = 1 when A > B",
+      "3.8 Lesson 8 — your self-check list"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "K-map self-check",
+    "bn": "নিজের উত্তর নিজে যাচাই",
+    "intro": "Expression ছোট হলেই সঠিক নয়। প্রতিটি valid input-এ original ও simplified output এক হতে হবে।",
+    "points": [
+      "Heading Gray order কি না দেখুন",
+      "সব target cell covered কি না দেখুন",
+      "Group power-of-two কি না দেখুন",
+      "Wrap-around ও overlap দেখুন",
+      "Truth table-এ output মিলিয়ে নিন"
+    ],
+    "memory": "সব row মিলে তবেই সঠিক",
+    "text": "THE K-MAP TUTORIAL                                                                           IT Written Exam Guide\n\n\n\n\n  Before you write “therefore”, check these six things\n\n   1. Are my headings 00, 01, 11, 10?\n   2. Is every 1 inside at least one group?\n   3. Is every group a power of two, and rectangular?\n   4. Did I check the wrap-around — edges and corners?\n   5. Could any two of my groups be merged into one bigger group? (If yes, merge them.)\n   6. Did I use each X only where it made a group bigger, and never as a group on its own?\n  Then, if the question says “and draw the logic circuit”, draw it. One AND gate per term, one OR gate to\n  collect them, inverters on the barred inputs.\n\n\n\n\n                                                         27",
+    "printed": 27,
+    "chapter": 4,
+    "sections": []
+  },
+  {
+    "id": 30,
+    "title": "Seven logic gates",
+    "bn": "০ ও ১-এর দরজা",
+    "intro": "AND-কে দুটি চাবির তালা ভাবুন—দুটিই চাই। OR-এ যেকোনো একটি চাবি চলে। NOT input উল্টে দেয়।",
+    "points": [
+      "AND: দুটো 1 হলে 1",
+      "OR: অন্তত একটি 1 হলে 1",
+      "NAND ও NOR হলো inverted AND ও OR",
+      "XOR input ভিন্ন হলে 1, XNOR একই হলে 1",
+      "NOT-এর একটি input"
+    ],
+    "memory": "XOR আলাদা, XNOR একই",
+    "text": "PART 4\n\n\n\nDIGITAL ELECTRONICS II — GATES &\nCIRCUITS\n\n\n  What they ask from this chapter\n\n  • What is a universal gate? Implement AND/OR/NOT/XOR using only NAND (or NOR) [45th BCS ICT 2024, BRiCM AME 2024,\n  PGCB AE(CSE) 2024, MRA SCO 2023, BPSC AP 2021, SPCBL AME 2021, BMA AE 2021, BPSC ANE 2020]\n  • Draw the logic circuit of a given Boolean expression and find the output [Combined Bank AME/AE(IT) 2024, SB PLC ADBA\n  2024, BAPEX AGM(ICT) 2023]\n  • Half adder / full adder truth table and diagram [BPSC SAE 2021, PSC Lecturer 2017]\n  • Multiplexer, demultiplexer, encoder, decoder [PSC Lecturer 2017, BCSCL NE 2017]\n  • Flip-flops, counters, combinational vs sequential circuits\n\n\n\n4.1 Logic gates\n\n\nDigital circuits work with two voltage levels: logic Low written as 0, and logic High written as 1. A\nlogic gate is a basic digital circuit with one or more inputs and a single output. Gates are the building\nblocks of every digital system.\n  The three categories — name them in this order\n\n  Basic gates: AND, OR, NOT.           Universal gates: NAND, NOR.           Special gates: Ex-OR, Ex-NOR.\n\n\nTruth tables of all seven gates\n\n         A     B     AND A·B        OR A+B         NAND A·B           NOR A+B     Ex-OR A⊕B     Ex-NOR A⊕B\n\n          0    0          0              0               1               1               0             1\n          0    1          0              1               1               0               1             0\n          1    0          0              1               1               0               1             0\n          1    1          1              1               0               0               0             1\n\n\nThe NOT gate has a single input and single output: Y = A, so 0 becomes 1 and 1 becomes 0.\n\nIn one sentence each: AND gives 1 only when all inputs are 1. OR gives 1 when any input is 1. NAND is AND\nfollowed by an inverter. NOR is OR followed by an inverter. Ex-OR gives 1 when the inputs are different;\nY = A ⊕ B = AB + AB. Ex-NOR gives 1 when the inputs are the same.\n\n\n4.2 Universal gates — the most repeated question in the syllabus\n\n\n\n                                                                 28",
+    "printed": 28,
+    "chapter": 5,
+    "sections": [
+      "4.1 Logic gates",
+      "4.2 Universal gates — the most repeated question in the syllabus"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Universal NAND & NOR",
+    "bn": "এক ধরনের gate-এ সব",
+    "intro": "Universal মানে একটি gate type দিয়েই NOT, AND, OR এবং যেকোনো Boolean circuit বানানো যায়। NAND ও NOR universal।",
+    "points": [
+      "NAND(A,A)=A′",
+      "AND পেতে NAND output আবার invert",
+      "OR পেতে input দুটো invert করে NAND",
+      "NOR দিয়ে একইভাবে dual construction হয়",
+      "De Morgan সাহায্যে AND/OR বদলান"
+    ],
+    "memory": "NAND/NOR দিয়ে gate toolkit",
+    "text": "DIGITAL ELECTRONICS II — GATES & CIRCUITS                                                    IT Written Exam Guide\n\n\n\n\n   Why are NAND and NOR called universal gates?\n\n   Because any other gate, and therefore any digital circuit whatsoever, can be built using only NAND gates\n   — or only NOR gates. NAND is logically an inverted AND; NOR is logically an inverted OR.\n   The advantage (they ask this separately): a manufacturer needs to produce and stock only one type of chip,\n   which lowers cost, simplifies design and repair, and makes circuits easier to fabricate on an IC.\n\n\nBuilding everything from NAND\n\nTarget gate          How many NANDs                        Construction\n\nNOT                  1                                     Tie both inputs of a NAND to A. Output = A · A = A.\nAND                  2                                     NAND the two inputs, then invert with a second\n                                                           NAND: A · B = A · B.\nOR                   3                                     Invert A and invert B (2 NANDs), then NAND the\n                                                           two results: A · B = A + B by De Morgan.\nNOR                  4                                     Build OR with 3 NANDs, then invert with 1 more.\nEx-OR                4                                     The standard 4-NAND arrangement — and the ques-\n                                                           tion is often asked as “maximum 4 NAND gates”.\n\n\nBuilding everything from NOR\n\nNOT                  1                                     Connect all NOR inputs to A. Output = A.\nOR                   2                                     NOR the inputs, then invert with a NOR inverter.\nAND                  3                                     Invert both inputs with NOR inverters, then NOR\n                                                           them: A + B = A · B by De Morgan.\n\n   The method for “implement F using only NAND”\n\n   Step 1. Put F into SOP form (sum of products).\n   Step 2. Take the double complement of the whole thing: F = F .\n   Step 3. Apply De Morgan once to turn the OR of products into a NAND of NANDs.\n   Step 4. Draw it: one NAND per product term, one NAND to collect them, one NAND-inverter for each barred\n   input.\n   Example: F = AB + CD + E [45th BCS ICT 2024]\n   F = AB + CD + E = AB · CD · E\n   So: NAND(A,B) → first input; NAND(C,D) → second; NAND(E,E) → third; feed all three into a final NAND.\n   Total: 4 NAND gates.\n\n\n4.3 Combinational circuits\n\n\n\n\n                                                      29",
+    "printed": 29,
+    "chapter": 5,
+    "sections": [
+      "4.3 Combinational circuits"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Combinational circuits & adders",
+    "bn": "Sum আর carry আলাদা",
+    "intro": "Half adder দুই bit যোগ করে। Full adder তৃতীয় bit হিসেবে আগের column-এর carry নেয়। তাই বহু bit যোগে full adder লাগে।",
+    "points": [
+      "Half: S=A XOR B, C=AB",
+      "Full: S=A XOR B XOR Cin",
+      "Cout=AB+ACin+BCin",
+      "দুটি half adder ও একটি OR দিয়ে full adder",
+      "Combinational output বর্তমান input-এর function"
+    ],
+    "memory": "Half দুই, full তিন input",
+    "text": "DIGITAL ELECTRONICS II — GATES & CIRCUITS                                                          IT Written Exam Guide\n\n\n\n\n   Combinational vs sequential — write this as a table, they ask it directly\n\n\n   Combinational circuit                                     Sequential circuit\n\n   Output depends only on the present input                  Output depends on the present input and the past\n                                                             state\n   No feedback path                                          Feedback path is present\n   Memory elements are not required                          Memory elements play an essential role and are\n                                                             required\n   No clock needed                                           Usually clocked\n   Faster, easier to design                                  Slower, harder to design\n   Examples: adder, MUX, decoder, encoder                    Examples: flip-flop, counter, register\n\n\nHalf adder and full adder\nThe half adder adds two single bits A and B. It produces a Sum S and a Carry C.\n\n\n  A    B     S    C                                  Reading straight from the table:\n  0     0    0    0                                  S = AB + AB = A ⊕ B\n  0     1    1    0\n                                                     C = A·B\n  1     0    1    0\n                                                     So a half adder is one Ex-OR gate and one AND gate.\n  1     1    0    1\n\n\nThe full adder adds three bits: A, B and a carry Cin from the previous stage.\n\n\n  A    B    Cin     S      Cout\n\n  0    0     0        0     0\n  0    0     1        1     0                               S = A BCin + ABCin + AB Cin + ABCin\n  0    1     0        1     0                                  = A ⊕ B ⊕ Cin\n  0    1     1        0     1\n                                                            Cout = ABCin + ABCin + ABCin + ABCin\n  1    0     0        1     0                                     = AB + BCin + Cin A\n  1    0     1        0     1\n  1    1     0        0     1\n  1    1     1        1     1\n\n\n   A full adder made from two half adders — the standard exam answer\n\n   First half adder: inputs A and B ⇒ S1 = A ⊕ B, C1 = AB.\n   Second half adder: inputs S1 and Cin ⇒ S = S1 ⊕ Cin = A ⊕ B ⊕ Cin , C2 = S1 Cin .\n   One OR gate: Cout = C1 + C2 = AB + (A ⊕ B)Cin .\n   So: two half adders + one OR gate. Say that sentence and draw the box diagram.\n\n\n\n\n                                                             30",
+    "printed": 30,
+    "chapter": 5,
+    "sections": []
+  },
+  {
+    "id": 33,
+    "title": "MUX, DEMUX, encoder & decoder",
+    "bn": "অনেক থেকে এক, এক থেকে অনেক",
+    "intro": "MUX হলো input বেছে নেওয়ার switch। n select bit দিয়ে 2ⁿ input-এর একটি নেওয়া যায়। Decoder code-কে active output-এ বদলায়।",
+    "points": [
+      "4:1 MUX-এ ২ select line",
+      "DEMUX এক input থেকে নির্বাচিত output-এ পাঠায়",
+      "Encoder সাধারণত 2ⁿ input → n output",
+      "Decoder n input → 2ⁿ output",
+      "Decoder-এর প্রতিটি output এক minterm"
+    ],
+    "memory": "MUX select করে, decoder চিনে",
+    "text": "DIGITAL ELECTRONICS II — GATES & CIRCUITS                                                              IT Written Exam Guide\n\n                                                                   C1\n                                                                            C2\n                                                                                  OR            Cout\n                         A                         S1\n                                      HA 1\n                         B                                    HA 2\n                                                                                     S\n                                             Cin\n\n\nMultiplexer and demultiplexer\nA multiplexer (MUX) selects one of many inputs and sends it to a single output — a “data selector”. With n\nselection lines it handles 2n inputs. A demultiplexer (DEMUX) does the reverse: one input, 2n outputs.\n\n4×1 MUX — data inputs I0 , I1 , I2 , I3 ; selection lines S1 , S0 ; output Y .\n\n\n  S1    S0    Y\n\n  0      0    I0                                Y = S1 S0 I0 + S1 S0 I1 + S1 S0 I2 + S1 S0 I3\n  0      1    I1\n                                                Implemented with 2 inverters, 4 AND gates and 1 OR gate.\n  1      0    I2\n  1      1    I3\n\n\nFive applications of a multiplexer (asked directly): communication systems, telephone networks, computer mem-\nory addressing, transmission from computer systems of satellites, and data routing in arithmetic logic units.\n\nEncoder and decoder\nA 3-to-8 decoder takes 3 inputs A, B, C and activates exactly one of 8 output lines:\n\n  D0 = A B C         D4 = AB C\n  D1 = A BC          D5 = ABC                             Each output is one minterm. That is why a decoder plus\n  D2 = ABC           D6 = ABC                             OR gates can implement any Boolean function.\n  D3 = ABC            D7 = ABC\n\n\n\n  Parameter             Encoder                                            Decoder\n\n  Input applied         Active input signal (original message)             Coded binary input\n  Output gener-         Coded binary output                                Active output signal (original message)\n  ated\n  Input lines           2n                                                 n\n  Output lines          n                                                  2n\n  Operation             Simple                                             Complex\n  Basic logic ele-      OR gate                                            AND gate together with NOT gate\n  ment\n\n\n4.4 Sequential circuits — latches, flip-flops, counters\n\n\nTriggering\nA clock signal has two levels (High, Low) and two edges (rising, falling).\n\n                                                              31",
+    "printed": 31,
+    "chapter": 5,
+    "sections": [
+      "4.4 Sequential circuits — latches, flip-flops, counters"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Latches, flip-flops & race-around",
+    "bn": "Circuit-এর স্মৃতি",
+    "intro": "Latch enable level চলাকালে বদলাতে পারে। Edge-triggered flip-flop clock-এর নির্দিষ্ট edge-এ input ধরে রাখে।",
+    "points": [
+      "SR: hold, reset, set",
+      " active-high NOR-এ S=R=1 invalid",
+      "JK-এ J=K=1 toggle",
+      "D-এ Qnext=D, T-এ Qnext=T XOR Q",
+      "JK race-around level-clocked ব্যবস্থায় দীর্ঘ pulse-এ হতে পারে",
+      "Edge triggering বা master–slave দিয়ে প্রতিরোধ"
+    ],
+    "memory": "D ধরে, T toggle, JK উন্নত SR",
+    "text": "DIGITAL ELECTRONICS II — GATES & CIRCUITS                                                            IT Written Exam Guide\n\n\nLevel triggering — the circuit responds while the clock is at a level. Positive level triggering means it operates while\nthe clock is Logic High; negative level triggering while it is Logic Low.\nEdge triggering — the circuit responds only at the instant the clock changes.\n\n      Latches are level-sensitive (controlled by an enable signal).    Flip-flops are edge-sensitive (controlled\n                                                  by a clock edge).\n\n\nSR latch and SR flip-flop\nAn SR latch (Set–Reset) is built from two cross-coupled NOR gates with an enable E. It has inputs S and R and\noutputs Q(t) and Q(t).\n• If S = 1, the next state Q(t+1) becomes 1 regardless of the present state.\n• If R = 1, the next state Q(t+1) becomes 0 regardless of the present state.\n• If S = R = 1, the next state is invalid / undefined — this is the weakness of SR.\n\n\n  S     R    Q(t)     Q(t+1)\n\n  0     0     0          0                           Simplifying this table on a 3-variable K-map (with the two X\n  0     0     1          1                           cells used freely) gives the characteristic equation:\n  0     1     0          0\n  0     1     1          0                                                Q(t+1) = S + R Q(t)\n  1     0     0          1\n                                                     This is itself a common K-map question — it shows the two\n  1     0     1          1                           chapters connecting.\n  1     1     0          X\n  1     1     1          X\n\n\nThe four flip-flops\n\n  Type              Characteristic equation        Behaviour and use\n\n  SR                Q(t+1) = S + RQ(t)             Set / Reset. S=R=1 is forbidden.\n  JK                Q(t+1) = JQ + KQ               The modified SR: the forbidden state now toggles. Obtained by\n                                                   feeding S = JQ(t) and R = KQ(t).\n  D                 Q(t+1) = D                     Data / Delay. The output simply follows the input after one\n                                                   clock. Used in registers and for storing one bit.\n  T                 Q(t+1) = T ⊕ Q(t)              Toggle. T =1 flips the output, T =0 holds it. Obtained from a JK\n                                                   with J and K tied together. Used to build counters.\n\n\n   Race-around condition — a short but frequent question\n\n   In a JK flip-flop, when J = K = 1 and the clock pulse stays High longer than the propagation delay, the\n   output toggles repeatedly within a single pulse. The final state becomes unpredictable. This is the race-\n   around condition.\n   Cure: use a master–slave JK flip-flop (two flip-flops in series, clocked on opposite levels), or use edge\n   triggering.\n\n\nCounters and registers\nA counter is a sequential circuit that counts clock pulses. With n flip-flops it counts from 0 to 2n − 1, i.e. it has 2n\nstates — so a 3-bit counter counts 0 to 7, a 4-bit counter 0 to 15.\n\n                                                           32",
+    "printed": 32,
+    "chapter": 5,
+    "sections": []
+  },
+  {
+    "id": 35,
+    "title": "Counters & registers",
+    "bn": "pulse গোনা আর bit রাখা",
+    "intro": "Counter clock pulse গোনে। Register একগুচ্ছ bit ধরে। Shift register প্রতি clock-এ bit একদিকে সরায়।",
+    "points": [
+      "n flip-flop সর্বোচ্চ 2ⁿ state",
+      "৩-bit counter 0–7",
+      "Ripple counter-এ delay পর্যায়ক্রমে জমে",
+      "Synchronous counter-এ shared clock",
+      "SISO, SIPO, PISO, PIPO loading ও reading বোঝায়"
+    ],
+    "memory": "S serial, P parallel",
+    "text": "DIGITAL ELECTRONICS II — GATES & CIRCUITS                                                              IT Written Exam Guide\n\n\n   Asynchronous (ripple) counter                                Synchronous counter\n\n   The external clock is applied to only the first flip-        The external clock reaches all flip-flops at once\n   flop\n   Each flip-flop’s output clocks the next one                  All flip-flops are clocked together\n   Slower — the change ripples through the chain                Faster — all stages change simultaneously\n   Simpler circuit, fewer gates                                 More complex, needs extra logic\n\n\nA register is a group of flip-flops used to store a binary word. A shift register moves the stored bits left or right by\none position on each clock pulse. Types by loading and reading method: SISO (serial-in serial-out), SIPO, PISO,\nPIPO.\n\n\n\n\n                                                           33",
+    "printed": 33,
+    "chapter": 5,
+    "sections": []
+  },
+  {
+    "id": 36,
+    "title": "Microprocessor fundamentals & buses",
+    "bn": "CPU বাইরের সঙ্গে কথা বলে",
+    "intro": "Microprocessor instruction মেনে data প্রক্রিয়া করে। Address bus বলে কোথায়, data bus বহন করে কী, control bus বলে কীভাবে কাজ হবে।",
+    "points": [
+      "ALU arithmetic ও logic করে",
+      "Instruction set হলো CPU বোঝে এমন command",
+      "Clock speed cycle rate, IPC instructions per cycle",
+      "n address bit → 2ⁿ location",
+      "Byte-addressed হলে 16-bit address → 64 KiB"
+    ],
+    "memory": "Address কোথায়, data কী, control কীভাবে",
+    "text": "PART 5\n\n\n\nMICROPROCESSOR & ASSEMBLY\nLANGUAGE\n\n\n  What they ask from this chapter\n\n  • What is a microprocessor? Write its features / basic terms\n  • Features and block diagram of 8085; features of 8086\n  • Addressing modes of 8086 with examples — asked almost every year\n  • Difference between microprocessor and microcontroller — a guaranteed table question\n  • What is an interrupt? Types of interrupt; what is an ISR?\n  • Assembly language statement format; difference between macro and procedure\n  • What does an assembler do? Difference between timer and counter\n\n\n5.1 What a microprocessor is\n\n\nA microprocessor is the controlling unit of a micro-computer, fabricated on a small chip. It performs\nALU (Arithmetic Logic Unit) operations and communicates with the other devices connected to it. In\none line for the exam: the microprocessor is the heart of the computer.\n\nBasic terms — learn these four definitions\n\n Instruction set              The group of commands that the microprocessor can understand. It is the interface\n                              between hardware and software.\n Bus                          A set of conductors that carries data, address or control information. A microproces-\n                              sor has three buses: data bus, address bus, control bus.\n IPC                          Instructions Per Cycle — how many instructions the CPU can execute in a single clock.\n Clock speed                  Operations per second, in MHz or GHz. Also called the clock rate.\n\n\n  How to remember the three buses\n\n  Address bus says where (one-way, CPU → memory). Data bus says what (two-way). Control bus says when\n  and how (read? write?).\n  The address bus width decides how much memory can be addressed: 2n locations for n address lines. 16\n  lines → 216 = 64 KB (8085). 20 lines → 220 = 1 MB (8086).\n\n\nFeatures of a microprocessor (6-mark list question)\n\n• Low cost — integrated circuit technology makes them cheap.\n• High speed — executes millions of instructions per second.\n• Small size — VLSI and ULSI integration reduces the whole computer’s size.\n\n                                                                34",
+    "printed": 34,
+    "chapter": 6,
+    "sections": [
+      "5.1 What a microprocessor is"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Processor classes & 8085",
+    "bn": "bit সংখ্যা কী বোঝায়?",
+    "intro": "Processor-এর word size ও address bus width এক নয়। একই CPU-এর data path 8-bit হলেও address 16-bit হতে পারে।",
+    "points": [
+      "8085 একটি 8-bit Intel processor, ১৯৭৭",
+      "RISC তুলনামূলক সরল instruction, CISC জটিল instruction set",
+      "Superscalar এক cycle-এ একাধিক instruction issue করতে পারে",
+      "Multicore ও pipelining ভিন্ন কৌশল",
+      "Processor-এর ক্ষমতা শুধু MHz দিয়ে নির্ধারণ হয় না"
+    ],
+    "memory": "Data width ≠ address width",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                                                           IT Written Exam Guide\n\n\n• Versatile — the same chip can be used for many different applications.\n• Low power consumption — uses metal oxide semiconductor (MOS) technology.\n• Less heat generation — semiconductor technology, unlike vacuum tube devices.\n• Reliable — very low failure rate, because it is made with semiconductor technology.\n• Portable — small size and low power consumption make devices portable.\n\n5.2 Classification of microprocessors\n\n\n\n Based on data bus width\n\n 8-bit                         Early computers and embedded systems. Intel 8080, Zilog Z80, Intel 8085\n 16-bit                        More complex calculations, better performance. Intel 8086\n 32-bit                        Personal computers and workstations. Intel 80386, ARM Cortex-A\n 64-bit                        High-performance and modern systems. Intel Core i7, AMD Ryzen\n\n Based on microarchitecture\n\n Single-core                   One processing core; executes one instruction at a time.\n Multi-core                    Several cores on one chip for parallel processing (dual, quad, hexa, octa).\n Superscalar                   Executes more than one instruction per clock cycle by dispatching instructions\n                               to multiple execution units.\n\n Based on power and performance\n\n High-performance              Designed for speed. Intel Xeon, AMD EPYC\n Low-power                     Designed for energy efficiency, mobile/embedded. Intel Atom, ARM Cortex-A7\n\n Based on special features\n\n Microcontroller               CPU + memory + I/O on a single chip. Arduino, ESP32\n DSP                           Digital Signal Processor, for signal processing. TI TMS320\n FPGA-based                    Field Programmable Gate Array, custom hardware. Xilinx Zynq\n\n\n  Superscalar — the exact answer they want\n\n  A superscalar processor is a CPU that implements a form of parallelism called instruction-level parallelism\n  within a single processor. It can issue more than one instruction per clock cycle.\n  Pentium is superscalar; the 80386 is not, because the Pentium could issue more than one instruction per\n  cycle and the 80386 could not. Note: each execution unit is not a separate processor — they are execution\n  resources inside a single CPU, such as an ALU.\n\n\n5.3 The Intel 8085 microprocessor\n\n\n8085 is pronounced “eighty-eighty-five”. It is an 8-bit microprocessor designed by Intel in 1977 using\nNMOS technology.\n\n\n\n\n                                                      35",
+    "printed": 35,
+    "chapter": 6,
+    "sections": [
+      "5.2 Classification of microprocessors",
+      "5.3 The Intel 8085 microprocessor"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "8085, interrupts & 8086",
+    "bn": "পুরোনো processor-এর গঠন",
+    "intro": "8085-এ accumulator ALU-এর গুরুত্বপূর্ণ register। 8086-এ Bus Interface Unit fetch করে এবং Execution Unit instruction চালায়।",
+    "points": [
+      "8085 8-bit data, 16-bit address, PC ও SP 16-bit",
+      "BC, DE, HL register pair",
+      "Interrupt priority: TRAP > RST7.5 > RST6.5 > RST5.5 > INTR",
+      "8086 16-bit data, 20-bit address → 1 MiB",
+      "8086 prefetch queue 6 byte"
+    ],
+    "memory": "85: 8/16, 86: 16/20",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                                                                                                 IT Written Exam Guide\n\n\n  8085 configuration — memorise these six lines\n\n   • 8-bit data bus\n   • 16-bit address bus, which can address up to 64 KB\n   • A 16-bit program counter (PC)\n   • A 16-bit stack pointer (SP)\n   • Six 8-bit registers arranged in pairs: BC, DE, HL\n   • Requires a +5 V supply and operates at a 3.2 MHz single-phase clock\n\n\nBlock diagram of the 8085 — what to draw\n\nIf they ask for the block diagram, draw these blocks and connect them all to the 8-bit internal data\nbus:\n\n                                         Interrupt control                                     Serial I/O control\n                                    INTR, RST 5.5/6.5/7.5, TRAP                                     SID, SOD\n\n\n                                                                  8-bit internal data bus\n\n                                                                                                               Register array\n                             Accumulator          Temp reg                   Flag           Instruction\n                                                                                                                B,C,D,E,H,L (8)\n                                 (8)                 (8)                  flip-flops        register (8)\n                                                                                                                SP (16), PC (16)\n\n\n\n                                                                            Instruction decoder &\n                               ALU (8)\n                                                                           machine cycle encoding\n\n\n                                         Timing and control unit                                Address buffer (8)\n                                 CLK, RD, WR, ALE, S0, S1, IO/M, HLDA, RESET                  Address/data buffer (8)\n\n                                                                                            A15 –A8        AD7 –AD0\n\n\n\n8085 interrupts — in priority order\n\n                 Interrupt   Type                         Note\n\n                 TRAP        Non-maskable                 Highest priority; cannot be disabled\n                 RST 7.5     Maskable                     Edge triggered\n                 RST 6.5     Maskable                     Level triggered\n                 RST 5.5     Maskable                     Level triggered\n                 INTR        Maskable                     Lowest priority; general purpose\n\n\n5.4 The Intel 8086 microprocessor\n\n\n  8086 features — the standard answer\n\n   • It has an instruction queue capable of storing six instruction bytes from memory, which results in faster\n     processing (this is pipelining).\n   • It was the first 16-bit processor: 16-bit ALU, 16-bit registers, 16-bit internal data bus and 16-bit external\n     data bus.\n   • 20-bit address bus ⇒ can address 1 MB of memory.\n   • Available in three versions by frequency: 8086 → 5 MHz, 8086-2 → 8 MHz, 8086-1 → 10 MHz.\n   • Divided into two independent units: the BIU (Bus Interface Unit — fetches instructions, handles addresses)\n     and the EU (Execution Unit — decodes and executes).\n\n\n\n                                                                            36",
+    "printed": 36,
+    "chapter": 6,
+    "sections": [
+      "5.4 The Intel 8086 microprocessor"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "8086 addressing & instruction groups",
+    "bn": "Operand কোথায় পাওয়া যাবে?",
+    "intro": "Addressing mode হলো instruction-এর data কোথা থেকে আসবে তা বলার পদ্ধতি। Register, constant, memory—প্রতিটির syntax আলাদা।",
+    "points": [
+      "MOV AX,CX register",
+      "MOV AL,35H immediate",
+      "MOV AX,[1592H] direct",
+      "MOV AX,[BX] register indirect",
+      "[BX+SI+4] based-indexed with displacement"
+    ],
+    "memory": "Bracket memory, literal immediate",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                                                              IT Written Exam Guide\n\n\n5.5 Addressing modes of the 8086\n\n\nDefinition to write: the way in which an operand is specified for an instruction — in the accumulator,\nin a general purpose register, or in a memory location — is called the addressing mode. The 8086 has\n8 addressing modes.\n\n Mode                             Where the operand is                        Example\n\n Register                         In an 8-bit or 16-bit general purpose       MOV AX, CX\n                                  register                                    ADD AL, BL\n Immediate                        In the instruction itself                   MOV AL, 35H\n                                                                              ADD AX, 4836H\n Direct                           Effective address written directly in the   MOV AX, [1592H]\n                                  instruction                                 MOV AL, [0300H]\n Register indirect                At the memory offset held in BP, BX, DI     MOV AX, [BX]\n                                  or SI\n Based                            Offset = contents of BX/BP + displace-      MOV DX, [BX+04]\n                                  ment\n Indexed                          Offset = contents of SI/DI + displace-      MOV BX, [SI+16]\n                                  ment\n Based-index                      Offset = base register + index register     MOV AX, [BX+SI]\n Relative based-index             Offset = base + index + displacement        MOV AX, [BX+SI+06]\n\n  The two-second way to identify a mode in an MCQ\n\n  Look at the second operand.\n  No brackets, a register → register. No brackets, a number → immediate.\n  Brackets with a plain number → direct. Brackets with one register → register indirect.\n  Brackets with BX/BP + number → based. Brackets with SI/DI + number → indexed.\n  Brackets with two registers → based-index.\n\n\n5.6 Instruction set — the groups\n\n\n\n Data transfer               MOV (move), PUSH/POP (stack), XCHG (exchange), IN/OUT (port), LEA (load effec-\n                             tive address)\n Arithmetic                  ADD, ADC (add with carry), SUB, SBB, INC, DEC, MUL, DIV, CMP (compare)\n Logical                     AND, OR, XOR, NOT, TEST\n Rotate/shift                ROL, ROR (rotate left/right), RCL, RCR (rotate through carry), SHL, SHR\n Branch                      JMP, JZ/JNZ, JC/JNC, CALL, RET, LOOP\n Machine control             HLT, NOP, WAIT, ESC\n\n  Definitions they ask for individually\n\n  OR — performs a bit-by-bit logical OR of two operands and places the result in the specified destination. XOR\n  — bit-by-bit logical XOR. NOT — takes the 1’s complement of the contents of a specified register or memory\n  location. TEST — performs a logical AND of two operands but only sets the flags; it does not store the result.\n\n\n                                                           37",
+    "printed": 37,
+    "chapter": 6,
+    "sections": [
+      "5.5 Addressing modes of the 8086",
+      "5.6 Instruction set — the groups"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Interrupts & assembly statements",
+    "bn": "কাজের মাঝে জরুরি ডাক",
+    "intro": "Interrupt এলে CPU নির্দিষ্ট handler বা ISR চালায়, তারপর আগের কাজে ফিরে যেতে পারে। Maskable interrupt সাময়িকভাবে বন্ধ করা যায়।",
+    "points": [
+      "Hardware interrupt বাহ্যিক signal",
+      "Software interrupt instruction দিয়ে",
+      "Statement: label: mnemonic operands ",
+      " comment",
+      "MOV data নেয়, ADD arithmetic, JMP branch",
+      "Assembly processor-specific, assembler machine code তৈরি করে"
+    ],
+    "memory": "Label কোথায়, mnemonic কী, operand কার উপর",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                                                             IT Written Exam Guide\n\n\n  RCL/RCR — rotate all bits left/right through the carry flag. ROL/ROR — rotate all bits left/right by the\n  specified number of bits.\n\n\n5.7 Interrupts\n\n\nAn interrupt is a process of creating a temporary halt during program execution, which allows pe-\nripheral devices to access the microprocessor. The microprocessor responds with an Interrupt Service\nRoutine (ISR) — a short program or subroutine that instructs the microprocessor how to handle the\ninterrupt.\n\n Hardware interrupt                   Caused by an external device through a physical pin (e.g. keyboard press,\n                                      TRAP, INTR).\n Software interrupt                   Caused by an instruction inside the program itself (e.g. INT n).\n Maskable                             Can be disabled/ignored by the programmer (INTR, RST 5.5/6.5/7.5).\n Non-maskable                         Cannot be disabled — always serviced (TRAP). Used for critical events\n                                      like power failure.\n\n\n5.8 Assembly language\n\n\nAssembly language is a low-level language that uses mnemonics (short symbolic names) instead of\nbinary machine code. It is machine-dependent — code written for one processor family will not run on\nanother.\n\nFormat of an assembly statement\n\nAn assembly language statement has up to four parts:\n\n 1. Label             An identifier followed by a colon (:). It names a memory address so it can be jumped to.\n 2. Mnemonic          The operation to perform, e.g. MOV, ADD, JMP.\n 3. Operand(s)        The data the instruction works on — registers, memory, or immediate values.\n 4. Comment           Begins with a semicolon (;). May contain any printable character. It can be on a line by\n                      itself or after an instruction.\n\n\n          START:      MOV   AX, BX        ; move BX into AX\n                      ADD   AX, 05H        ; add 5 to AX\n                      HLT                 ; stop\n          ; label        mnemonic     operands          comment\n\n\nAdvantages and disadvantages of assembly language\n\nAdvantages: directly controls hardware; needs very little memory and execution time; suitable for time-critical\njobs; ideal for writing interrupt service routines and memory-resident programs; makes complex hardware-\nspecific jobs easier.\nDisadvantages: machine dependent (not portable); long programs are hard to write, read and maintain; the\nprogrammer must know the hardware in detail.\n\n                                                      38",
+    "printed": 38,
+    "chapter": 6,
+    "sections": [
+      "5.7 Interrupts",
+      "5.8 Assembly language"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Assembler, macro, procedure & timers",
+    "bn": "Code-কে machine ভাষায়",
+    "intro": "Assembler mnemonic-কে binary instruction-এ বদলায়। Macro expand হয়, procedure call হয়। Timer ও counter-এর পার্থক্য clock source-এ।",
+    "points": [
+      "Macro repeated use-এ code size বাড়তে পারে",
+      "Procedure একই body reuse করে, call overhead থাকে",
+      "Microcontroller CPU+memory+I/O integrate করে",
+      "Classic 8051 timer internal cycle, counter external pulse",
+      "1/12 ও 1/24 oscillator ratio classic 8051-specific"
+    ],
+    "memory": "Architecture না জানলে ratio নয়",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                                                                   IT Written Exam Guide\n\n\nAn assembler\n\nAn assembler is a program that converts assembly language into machine code. It takes the basic\ncommands and operations from assembly code and converts them into binary code that a specific type\nof processor can recognise. Assemblers are similar to compilers in that they produce executable code.\n\n5.9 Two difference tables that come up repeatedly\n\n\nMicroprocessor vs Microcontroller\n\n  Microprocessor                                             Microcontroller\n\n  Used for big applications                                  Used to execute a single task within an application\n  It is the heart of a computer system                       It is the heart of an embedded system\n  Just a processor — memory and I/O must be con-             Contains the processor along with internal memory\n  nected externally                                          and I/O components\n  Cost of the entire system increases                        Cost of the entire system is low\n  Power consumption is high                                  Power consumption is low\n  Most have no power-saving mode                             Most have a power-saving mode\n  Difficult to replace                                       Easy to replace\n  Mainly used in personal computers                          Used in washing machines, MP3 players, etc.\n\n\nMacro vs Procedure\n\n  Macro                                                      Procedure\n\n  A sequence of instructions written inside the macro        A set of instructions that can be called repetitively to\n  definition to support modular programming                  perform a specific task\n  Requires more memory                                       Requires less memory\n  Does not require CALL and RET instructions                 Requires CALL and RET instructions\n  Machine code is generated each time the macro is           Machine code is generated only once\n  called\n  Used for fewer than 10 instructions                        Used for more than 10 instructions\n\n\nTimer vs Counter\n\n  Counter                                                    Timer\n\n  The register increments counting 1-to-0 transitions        The register increments for every machine cycle\n  at an external input pin (T0, T1)\n  Uses an external signal to count pulses                    Uses the internal clock frequency and generates a\n                                                             delay\n  Maximum count rate is 1/24 of the oscillator fre-          Maximum count rate is 1/12 of the oscillator fre-\n  quency                                                     quency\n\n  AVR microcontroller — one short paragraph is enough\n\n  The AVR microcontroller is an advanced version of the microprocessor. It contains an on-chip CPU, ROM,\n  RAM, I/O unit and interrupt controller. Because everything is on one chip, a microcontroller is used for\n\n\n                                                        39",
+    "printed": 39,
+    "chapter": 6,
+    "sections": [
+      "5.9 Two difference tables that come up repeatedly"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Microcontroller applications",
+    "bn": "নির্দিষ্ট কাজের controller",
+    "intro": "Embedded system সাধারণত একটি নির্দিষ্ট কাজ করে। Sensor পড়া, motor চালানো, button ধরা—microcontroller এসব কাজে সুবিধাজনক।",
+    "points": [
+      "Washing machine control একটি উদাহরণ",
+      "Integrated peripheral board ছোট করতে পারে",
+      "Power ও performance model-নির্ভর",
+      "সকল microcontroller এক task-এ সীমাবদ্ধ নয়"
+    ],
+    "memory": "কাজ বুঝে chip বেছে নিন",
+    "text": "MICROPROCESSOR & ASSEMBLY LANGUAGE                   IT Written Exam Guide\n\n\n  high-speed, dedicated control applications.\n\n\n\n\n                                                40",
+    "printed": 40,
+    "chapter": 6,
+    "sections": []
+  },
+  {
+    "id": 43,
+    "title": "Software engineering & process activities",
+    "bn": "Code-এর আগে সমস্যা বুঝুন",
+    "intro": "Software engineering হলো প্রয়োজন বিশ্লেষণ করে নির্ভরযোগ্য software পরিকল্পনা, নির্মাণ, পরীক্ষা ও রক্ষণাবেক্ষণ করা।",
+    "points": [
+      "Specification কী হবে নির্ধারণ করে",
+      "Development বাস্তবায়ন করে",
+      "Validation প্রয়োজন মেলে কি না দেখে",
+      "Evolution পরিবর্তিত চাহিদায় মানিয়ে নেয়",
+      "Operational, transitional, maintenance quality বইয়ের শ্রেণিবিন্যাস"
+    ],
+    "memory": "কী → বানানো → যাচাই → বদল",
+    "text": "PART 6\n\n\n\nSOFTWARE ENGINEERING & SDLC\n\n\n  What they ask from this chapter\n\n  • Write down the SDLC steps with explanation — the single most repeated question [BRiCM AME 2024, EGCB SAE(ICT) 2023,\n  DESCO AE 2023, NPCBL ET(Soft) 2023, BTRC SAD 2021, BPSC SAE 2021, 40th BCS 2020, BPSC ANE 2020]\n  • Characteristics of software; define black box and white box testing [45th BCS ICT 2024]\n  • Difference between the models (Waterfall vs Agile, Agile vs RAD) [PBL SQA 2023, BPSC AP 2022]\n  • What is SRS? At which stage of development is it made? [BPSC AP, 40th BCS 2021]\n  • SQA — what will you look for in quality software? [Combined Bank SO(IT) 2024]\n  • Responsibilities of a software engineer [45th BCS CSE 2024]\n  • Risk analysis techniques [38th BCS]; SMLC steps [BUET MSc Oct 2019]\n  • Cohesion vs coupling; verification vs validation; buy-vs-build calculation [NWPGCL AM(ICT) 2024]\n\n\n\n6.1 Software engineering basics\n\n\nSoftware engineering is the process of analysing user requirements and then designing, building and\ntesting a software application that satisfies those requirements.\n\nCharacteristics of good software — remember “OTM”\n\n Operational               How well the software works in operation: budget, usability, efficiency, correctness,\n                           functionality, dependability, security, safety.\n Transitional              How well it moves from one environment to another: portability, interoperability,\n                           reusability, adaptability.\n Maintenance               How well it can be maintained in a changing environment: modularity, maintainability,\n                           flexibility, scalability.\n\n\nThe four key software process activities\n\n• Software specification — the functionality of the software and the constraints on its operation must\n  be defined.\n• Software development — the software that meets the requirement must be produced.\n• Software validation — the software must be validated to ensure it does what the customer wants.\n• Software evolution — the software must evolve to meet changing client needs.\n\n6.2 SDLC — the Software Development Life Cycle\n\n\nA software life cycle model (also called a process model) is a pictorial and diagrammatic representa-\ntion of the software life cycle. It represents all the methods required to make a software product transit\n\n                                                              41",
+    "printed": 41,
+    "chapter": 7,
+    "sections": [
+      "6.1 Software engineering basics",
+      "6.2 SDLC — the Software Development Life Cycle"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "SDLC phases & maintenance",
+    "bn": "Software-এর জীবনচক্র",
+    "intro": "বাড়ি বানানোর আগে চাহিদা ও নকশা লাগে। Software-ও তাই। বাস্তবে phase-গুলো overlap ও repeat হতে পারে।",
+    "points": [
+      "Planning, requirements/SRS, design, coding, testing, deployment, maintenance",
+      "Acceptance test user need দেখে",
+      "Corrective fault ঠিক করে",
+      "Adaptive নতুন environment, perfective উন্নতি, preventive ভবিষ্যৎ ঝুঁকি কমায়",
+      "SMLC: identify → analyse → design → implement → test → accept → deliver"
+    ],
+    "memory": "সাত ধাপ, পরে যত্ন",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                        IT Written Exam Guide\n\n\nthrough its life cycle stages.\n\n                                      1              2                                   4\n                                                                             3\n                                  Planning &   Defining req.                         Developing\n                                                                         Designing\n                                 requirement       SRS                                (coding)\n\n\n\n                                                    5                        6            7\n                                                 Testing                Deployment   Maintenance\n\n\n                                                     feedback / new requirements\n\n\n\n\n 1. Planning & require-          The most important stage. Performed by senior team members with input from\n ment analysis                   all stakeholders and domain experts (SMEs). Quality assurance planning and\n                                 identification of project risks also happen here.\n 2. Defining requirements        The requirements are documented and accepted by the stakeholders. This\n                                 is done through the SRS — Software Requirement Specification document,\n                                 which contains all the product requirements to be built during the life cycle.\n 3. Designing the software       Brings together all the knowledge of requirements and analysis. This phase is\n                                 the product of the previous two.\n 4. Developing the project       Actual development and programming begins. Developers follow the coding\n                                 guidelines and use compilers, interpreters and debuggers.\n 5. Testing                      The code is tested against the requirements. Unit, integration, system and\n                                 acceptance testing are done in this stage.\n 6. Deployment                   Once certified and free of stated bugs, the software is deployed and released.\n 7. Maintenance                  When clients start using the system, real issues appear and are solved from time\n                                 to time. This care of the developed product is maintenance.\n\n\n  Two traps in this question\n\n  1. If asked “which stage ensures user acceptance?” the answer is the testing stage, specifically acceptance\n  testing — not deployment.\n  2. If asked “at which stage is the SRS made?” the answer is stage 2, defining requirements — not stage 1.\n\n\nSMLC — Software Maintenance Life Cycle\n\nSMLC is the process of modifying software after delivery to correct faults, improve performance and\nadapt it to a changed environment. Its steps:\n1. Identification and tracing — identify the requirement for modification.\n2. Analysis — analyse the impact and cost of the change.\n3. Design — design the new or changed modules.\n4. Implementation — write the new code.\n5. System testing — integration testing of the changed modules.\n6. Acceptance testing — accepted by the users.\n7. Delivery — deliver the modified system to the customer.\nTypes of maintenance: Corrective (fix faults), Adaptive (adapt to a new environment), Perfective\n(improve performance or add features), Preventive (reduce future problems).\n\n6.3 The SDLC models\n\n                                                                42",
+    "printed": 42,
+    "chapter": 7,
+    "sections": [
+      "6.3 The SDLC models"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Waterfall, V, incremental & spiral",
+    "bn": "কোন process কখন?",
+    "intro": "Requirement স্থির হলে sequential plan কাজ করতে পারে। অনিশ্চয়তা বেশি হলে feedback ও risk analysis দরকার। একটি model সব project-এ সেরা নয়।",
+    "points": [
+      "Waterfall-এ phase ক্রমশ এগোয়",
+      "V-model development stage-এর সঙ্গে test stage মেলায়",
+      "Incremental-এ working অংশ সরবরাহ হয়",
+      "Spiral-এ objectives, risk, development/test, planning",
+      "High risk project-এ spiral উপযোগী হতে পারে"
+    ],
+    "memory": "Spiral-এর কেন্দ্রে risk",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                          IT Written Exam Guide\n\n\n\n\nWaterfall model\n\nDevelopment flows steadily downwards through the phases like a waterfall. A phase must be complete\nbefore the next one begins.\n\n                                 System requirement\n\n                                                Design\n\n                                                      Implementation\n\n                                                                     Testing\n\n                                                                               Deployment\n\n\n                                                                                       Maintenance\n\n\n\n\nAdvantages: simple to implement and needs minimal resources; the start and end point of each phase is fixed,\nwhich makes progress easy to track; easy control and clarity for the customer due to a strict reporting system.\nDisadvantages: the risk factor is higher, so it is not suitable for large and complex projects; it cannot accept\nchanges in requirements during development; working software is produced only late in the life cycle.\n\nV-model (verification and validation model)\n\nEach development phase on the left has a directly matching testing phase on the right. Requirement\nanalysis pairs with acceptance testing, system design with system testing, architectural design with\nintegration testing, and module design with unit testing.\nAdvantage: testing is planned early, so defects are found early. Simple and easy to understand. Disadvantage:\nvery rigid and least flexible; no early prototypes are produced; not good for complex or changing projects.\n\nIncremental / iterative model\n\nThe requirement is broken into multiple builds. Each build (increment) goes through its own require-\nment, design, coding and testing cycle, and modules are added until the full system is ready.\nAdvantage: working software is produced early; easier to test and debug a small iteration; flexible to changes.\nDisadvantage: needs good planning and design; the total cost is higher than waterfall.\n\nSpiral model\n\nThe spiral model combines iterative development with risk analysis. Each loop of the spiral has four\nquadrants:\n\n 1. Objective setting           Identify objectives, alternatives and constraints for this cycle.\n 2. Risk assessment             Identify and resolve the risks — the defining feature of this model.\n 3. Development & vali-         Develop and test the product of this cycle.\n dation\n 4. Planning                    Review the result and plan the next loop of the spiral.\n\n\nAdvantage: best for large, expensive, high-risk projects; risk is handled explicitly. Disadvantage: costly; requires\nexpertise in risk analysis; not suitable for small projects.\n\n                                                                43",
+    "printed": 43,
+    "chapter": 7,
+    "sections": []
+  },
+  {
+    "id": 46,
+    "title": "RAD, prototype & Agile",
+    "bn": "ছোট করে বানিয়ে feedback নিন",
+    "intro": "Prototype দিয়ে ধারণা যাচাই হয়। Agile-এ ছোট increment-এ কাজ ও feedback চলে। RAD দ্রুত development-এ reusable component ও prototyping ব্যবহার করে।",
+    "points": [
+      "Agile loop: requirement → design → implementation → test → deploy → feedback",
+      "Scrum, XP, FDD, DSDM, Crystal, Lean বইয়ে আছে",
+      "Agile change গ্রহণ করে, পরিকল্পনা বাদ দেয় না",
+      "Iteration length framework-নির্ভর",
+      "Agile-এ prototyping নিষিদ্ধ নয়"
+    ],
+    "memory": "ছোট delivery, দ্রুত feedback",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                        IT Written Exam Guide\n\n\nRAD — Rapid Application Development\n\nThe central theme of RAD is designing quick prototypes which are then refined into production-quality\ncode. It relies heavily on reusable components and a strong, experienced team.\n\nPrototype model\n\nA working sample (prototype) with limited functionality is built first and shown to the customer. Their\nfeedback refines the requirements, and only then is the real product built. Good when requirements are\nunclear at the start.\n\nAgile model\n\nAgile promotes continuous interaction between development and testing throughout the SDLC. The\nproject is divided into small incremental builds; all builds are provided in iterations, and each iteration\nlasts from one to three weeks.\n   The six phases of Agile — write them in this order\n\n   Requirements gathering → Design the requirements → Construction/iteration → Testing/Quality assurance\n   → Deployment → Feedback.\n\nAdvantages: promotes teamwork and cross-training; functionality can be developed rapidly and demonstrated;\nresource requirements are minimum; suitable for fixed or changing requirements; a good model for environments\nthat change steadily.\nDisadvantages: not suitable for very small projects; needs an expert to take decisions; the cost of Agile is a little\nmore than other models; documentation is minimal, so if a key person leaves, knowledge is lost.\nAgile testing methods (name at least four): Scrum, Crystal, DSDM (Dynamic Software Development Method),\nFDD (Feature Driven Development), Lean Software Development, XP (eXtreme Programming).\n\nAgile vs Waterfall — the table they want\n\n   Agile model                                                Waterfall model\n\n   Follows an incremental approach                            Follows a sequential design process\n   Allows requirements to change after development            Rigid — does not allow requirements to change after\n   starts, so it is more flexible                             development starts\n   Testing is done simultaneously with development            Testing is done after the build step\n   Known for its versatility                                  A systematic, sometimes rigorous, developing\n                                                              method\n   Small projects can be delivered very quickly               Not suitable if requirements are unclear\n   Customer involvement is continuous                         Customer is mainly involved at the beginning and the\n                                                              end\n\n\n\n\n                                                         44",
+    "printed": 44,
+    "chapter": 7,
+    "sections": []
+  },
+  {
+    "id": 47,
+    "title": "Requirements, SRS & feasibility",
+    "bn": "কী দরকার, সম্ভব কি?",
+    "intro": "Requirement engineering-এ মানুষ কী চায় তা সংগ্রহ, পরিষ্কার, লিখিত ও যাচাই করা হয়। Feasibility বলে প্রস্তাব বাস্তবায়নযোগ্য কি না।",
+    "points": [
+      "Feasibility → elicitation/analysis → specification → validation → management",
+      "Technical technology ও skill, operational ব্যবহার, economic খরচ",
+      "SRS complete, consistent, unambiguous, verifiable হওয়া চাই",
+      "Risk identify → analyse → plan → monitor",
+      "Agile ও RAD-এর comparison project context-এ পড়ুন"
+    ],
+    "memory": "প্রয়োজন লিখুন এমনভাবে যেন test করা যায়",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                            IT Written Exam Guide\n\n\nAgile vs RAD\n\n   Agile model                                                   RAD model\n\n   Does not recommend developing prototypes; em-                 Central theme is designing quick and dirty proto-\n   phasises systematic development of each incremen-             types which are then refined into production-quality\n   tal feature                                                   code\n   Breaks the solution into features that are incremen-          Developers build all the features first (badly), then\n   tally developed and delivered                                 successively improve the code\n   Not suitable for small projects that cannot be divided        Hard to use if the company has not developed a sim-\n                                                                 ilar project before, as there is no code to reuse\n\n\n6.4 Requirement engineering\n\n\nRequirement engineering (RE) is the process of defining, documenting and maintaining requirements\nin the engineering design process. It provides the mechanism to understand what the customer desires,\nanalyse the need, assess feasibility, negotiate a reasonable solution, specify the solution clearly, validate\nthe specification, and manage the requirements as they are transformed into a working system.\n   The five steps of the requirement engineering process\n\n   Feasibility study → Requirement elicitation and analysis → Software Requirement Specification → Software\n   requirement validation → Software requirement management.\n\n\nFeasibility study — three types\n\n Technical                     Assesses whether the current resources and technology are enough to meet the\n                               user’s requirements within the allocated budget and time.\n Operational           (be-    Checks whether the human beings or employees in the business will actually use\n havioural)                    it, and whether the software will operate properly after it is developed.\n Economic                      Determines whether the software has the potential to generate financial gain —\n                               covering development cost, cost of the study, and estimated software and hardware\n                               cost.\n\n\nSRS — Software Requirement Specification\n\nThe SRS is a document that describes what the software will do and how it is expected to perform.\nIt is created in stage 2 of the SDLC, after requirement analysis. A good SRS is correct, complete,\nconsistent, unambiguous, verifiable, modifiable and traceable.\n\nRisk analysis techniques\n\nRisk identification (checklists, brainstorming, past project data) → Risk analysis (estimate probability and impact\nof each risk) → Risk prioritisation (rank by risk exposure = probability × loss) → Risk management planning\n(avoidance, transfer, mitigation, contingency plan) → Risk monitoring.\nCategories: project risks (schedule, budget, staff), technical risks (design, implementation, interfacing), and\nbusiness risks (market, sales, management).\n\n\n6.5 Software design concepts\n\n                                                            45",
+    "printed": 45,
+    "chapter": 7,
+    "sections": [
+      "6.4 Requirement engineering",
+      "6.5 Software design concepts"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Modularity, cohesion & coupling",
+    "bn": "ভেতরে ঘনিষ্ঠ, বাইরে স্বাধীন",
+    "intro": "বড় software-কে module-এ ভাগ করলে বোঝা ও বদলানো সহজ। Cohesion module-এর ভেতরের কাজগুলোর সম্পর্ক, coupling module-গুলোর নির্ভরতা।",
+    "points": [
+      "High cohesion চাই",
+      "Low coupling চাই",
+      "Functional independence maintenance সহজ করে",
+      "Information hiding implementation detail আড়াল করে",
+      "Testing defect খুঁজে, defect না থাকা প্রমাণ করে না"
+    ],
+    "memory": "ভিতরে high, বাইরে low",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                         IT Written Exam Guide\n\n\n\n\nModularity\n\nModularity is the division of software into separate modules which are differently named and ad-\ndressed, and are integrated later to obtain the complete functional software. It is the only property that\nallows a program to be intellectually manageable.\nAdvantages: large programs can be written by several people; encourages commonly used routines to be placed\nin a library and reused; simplifies loading a large program into main storage; provides a framework for complete\ntesting and is more accessible to test; produces a well-designed, more readable program.\nDisadvantages: execution time may be longer; storage size may be increased; compilation and loading time may\nbe longer; inter-module communication problems may increase.\n\nCohesion vs coupling — know the direction\n\n  Cohesion                                                    Coupling\n\n  Measures the relative functional strength within a          Measures the relative interdependence between\n  module                                                      modules\n  It is an intra-module concept                               It is an inter-module concept\n  We want cohesion to be HIGH                                 We want coupling to be LOW\n  Types (best to worst): functional, sequential, com-         Types (best to worst): data, stamp, control, external,\n  municational, procedural, temporal, logical, coinci-        common, content\n  dental\n\n\n  One-line memory hook\n\n  High cohesion, low coupling. A module should do one job well (cohesion) and depend on others as little as\n  possible (coupling).\n\nInformation hiding means each module hides its internal design decisions from other modules; they\ncommunicate only through well-defined interfaces. Functional independence is achieved through high\ncohesion and low coupling.\n\n6.6 Software testing\n\n\nSoftware testing is the process of identifying the correctness of software by considering all its attributes\n(reliability, scalability, portability, re-usability, usability) and evaluating the execution of software com-\nponents to find bugs, errors or defects.\n\n\n\n\n                                                         46",
+    "printed": 46,
+    "chapter": 7,
+    "sections": [
+      "6.6 Software testing"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Testing types, levels & alpha/beta",
+    "bn": "কী পরীক্ষা করছেন?",
+    "intro": "Black-box input-output behaviour দেখে। White-box code structure দেখে। Grey-box কিছু internal knowledge ব্যবহার করে। এগুলোর speed-এর স্থির ranking নেই।",
+    "points": [
+      "Unit ছোট component",
+      "Integration component-এর সংযোগ",
+      "System পুরো system",
+      "Acceptance business ও user need",
+      "Alpha controlled in-house, beta বাস্তব user environment"
+    ],
+    "memory": "Unit → integration → system → acceptance",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                      IT Written Exam Guide\n\n\nWhite box vs black box vs grey box\n\n  Black box                             White box                             Grey box\n\n  Knowledge of the internal code        Knowledge of the internal code is     Partial knowledge of the internal\n  is not required; only the GUI is      necessarily required                  structure is required\n  needed for test cases\n  Performed by the test engineer        Performed by the developer            Tester, developer and end user can\n                                                                              all take part\n  Not considered for algorithm test-    Well suited for algorithm testing     Not considered for algorithm test-\n  ing                                                                         ing\n  The least time-consuming process      The most time-consuming process       Less time-consuming than white\n                                                                              box\n  Also called functional      /   be-   Also called structural / glass box    Combination of both\n  havioural testing                     testing\n\n\nAdvantages of white box: optimises code so hidden errors are found; test cases can be automated easily; more\nthorough because it covers all code paths; can begin in the SDLC phase even without a GUI.\nDisadvantages of white box: very time consuming for large applications; expensive and complex; can lead to\nproduction errors because it is not detailed by the developers; needs professional programmers with detailed\nknowledge of the language and implementation.\n\nLevels of testing\n\n Unit testing             Each individual module or component is tested on its own. Usually white box, done\n                          by the developer.\n Integration testing      Modules are combined and tested as a group to find interface defects.\n System testing           The complete, integrated system is tested against the requirements.\n Acceptance testing       The customer/user tests whether the system meets the business need. This is the\n                          stage that ensures user acceptance.\n\n\nAlpha vs beta testing\n\n  Alpha testing                                              Beta testing\n\n  Done in-house by internal testers                          Done by real users in their own environment\n  Uses both white box and black box techniques               Uses only black box testing\n  Long execution cycles may be required                      Only a few weeks are required\n  Performed before the product launch                        Performed at the time of product marketing\n\n\n\n\n                                                        47",
+    "printed": 47,
+    "chapter": 7,
+    "sections": []
+  },
+  {
+    "id": 50,
+    "title": "Verification, SQA, Six Sigma & patterns",
+    "bn": "সঠিকভাবে বানানো ও সঠিক জিনিস বানানো",
+    "intro": "Verification specification-এর সঙ্গে মেলে কি না দেখে। Validation ব্যবহারকারীর উদ্দেশ্য পূরণ করছে কি না দেখে। বইয়ের একটি table-এ বাক্য দুটি উল্টো হয়েছে।",
+    "points": [
+      "Verification: building the product right",
+      "Validation: building the right product",
+      "SQA process assurance, QC product checks",
+      "DMAIC existing process, DMADV new design",
+      "Creational, structural, behavioural pattern আলাদা উদ্দেশ্যের"
+    ],
+    "memory": "Right process + right need",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                      IT Written Exam Guide\n\n\nVerification vs validation\n\n   Verification                                               Validation\n\n   “Are we developing the right product?” — checking          “Is the developed product right?” — checking\n   against the specification                                  against the user’s actual need\n   Also known as static testing                               Also known as dynamic testing\n   Quality assurance (QA) comes under verification            Quality control (QC) comes under validation\n   Code is not executed                                       Code is executed\n   Done before validation                                     Done after verification\n   Reviews, walkthroughs, inspections                         Unit, integration, system, acceptance testing\n\n\n6.7 Software quality assurance (SQA)\n\n\nSQA is a set of planned and systematic activities that ensure the software process and product conform\nto requirements and standards. It is process-oriented and runs throughout the whole SDLC, unlike\nquality control which is product-oriented and checks the finished item.\n   “As an SQA team leader, what will you look for when buying software?”\n\n   Answer with these attributes: Functionality (does it do the required job), Reliability, Usability, Effi-\n   ciency/performance, Maintainability, Portability, Security, Scalability, Vendor support and documen-\n   tation, Compliance with standards, and total cost of ownership including licence and maintenance.\n\n\nSix Sigma\n\nSix Sigma is the process of improving quality by removing defects and their causes. The quality stan-\ndard is defined as 3.4 defects per million opportunities. Its two methodologies:\nDMAIC — Define, Measure, Analyse, Improve, Control. Used to improve an existing product or process.\nDMADV — Define, Measure, Analyse, Design, Verify. Used to create new product or process designs.\n\n\n6.8 Responsibilities of a software engineer\n\n\nAnalyse and gather user requirements; design the system architecture and modules; write clean, efficient and\nmaintainable code; test and debug the software; document the design and the code; ensure security, performance\nand scalability; maintain and update the software after delivery; collaborate with stakeholders and the team; follow\nstandards, ethics and the agreed process model.\n\n\n6.9 Design patterns (short notes)\n\n\nCreational — concerned with how objects are created (e.g. Singleton, Factory).\nStructural — concerned with class and object composition; uses inheritance to compose interfaces (e.g. Adapter,\nDecorator).\nBehavioural — concerned with communication between objects (e.g. Observer, Strategy).\nJ2EE patterns — concerned with the presentation tier, identified by Sun Java Center.\n\n\n                                                         48",
+    "printed": 48,
+    "chapter": 7,
+    "sections": [
+      "6.7 Software quality assurance (SQA)",
+      "6.8 Responsibilities of a software engineer",
+      "6.9 Design patterns (short notes)"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Singleton & expected-cost decision",
+    "bn": "probability দিয়ে খরচ তুলুন",
+    "intro": "Expected cost হলো সম্ভাব্য প্রতিটি খরচকে তার probability দিয়ে গুণ করে যোগ। কম expected cost হলেই সব দিক থেকে সেরা এমন নয়।",
+    "points": [
+      "Buy = 50 lac",
+      "Build = 0.30×40+0.70×50 = 47 lac",
+      "Open source = 0.20×30+0.80×50 = 46 lac",
+      "Licence, সময়, support ও control-ও বিবেচনা করুন",
+      "Singleton একটি instance-এ access দেয়, concurrency ও testing জটিল হতে পারে"
+    ],
+    "memory": "E(C)=Σ probability × cost",
+    "text": "SOFTWARE ENGINEERING & SDLC                                                                       IT Written Exam Guide\n\n\nSingleton pattern: defines a class that has only one instance and provides a global point of access to it.\nTwo forms: early instantiation (created at load time) and lazy instantiation (created when required).\nAdvantage: saves memory, because the object is not created at each request — a single instance is\nreused. Used in logging, caching, thread pools, configuration settings, and database applications.\n  The buy vs build question [NWPGCL AM(ICT) 2024]\n\n  When asked to choose between Buy, Build, or Open source + modification, compute the expected cost of\n  each option and pick the lowest, then justify with non-cost factors.\n  Buy = 50 lac (certain).\n  Build = 0.30 × 40 + 0.70 × 50 = 12 + 35 = 47 lac.\n  Open source = 0.20 × 30 + 0.80 × 50 = 6 + 40 = 46 lac.\n  Lowest expected cost is open source with modification. Then add the qualitative reasoning the examiner\n  wants: buying gives fastest delivery but no control over the source; building gives full control but the highest\n  risk and time; open source balances cost and control but depends on licence terms and community support.\n\n\n\n\n                                                        49",
+    "printed": 49,
+    "chapter": 7,
+    "sections": []
+  },
+  {
+    "id": 52,
+    "title": "Original bank: Linux",
+    "bn": "Command না দেখে বলুন",
+    "intro": "এই চার পৃষ্ঠার source bank-এ বইয়ের original question-answer আছে। Practice MCQ-গুলো আলাদাভাবে নতুন তৈরি হিসেবে চিহ্নিত।",
+    "points": [
+      "Command প্রশ্নে কাজ, option, filename শনাক্ত করুন",
+      "Kernel, shell, distribution আলাদা করুন",
+      "Hidden file-এর জন্য ls -a",
+      "Line 11–15-এর জন্য sed -n '11,15p' file",
+      "Permission-এর জন্য chmod"
+    ],
+    "memory": "উত্তর ঢেকে আগে চেষ্টা",
+    "text": "PART 7\n\n\n\nRAPID-FIRE QUESTION BANK\n\n\n  How to use these four pages\n\n  Cover the right-hand column with a sheet of paper. Say the answer out loud, then slide the paper down. Do one section a\n  day. Anything you miss twice, go back and re-read that section of the book — do not just memorise the line.\n\n\n\n7.1 Linux\n\n\n\nQuestion                                                     Answer\n\nWho created Linux, when and where?                           Linus Torvalds, April 1991, University of Helsinki, Finland, aged\n                                                             21.\nLinux vs Unix in one line?                                   Linux is just the kernel and is open source (GPL); Unix is a com-\n                                                             plete OS and is copyrighted.\nLayers of Linux architecture?                                Hardware → Kernel → Shell → Applications → User.\nThree ways Linux provides security?                          Authentication, authorization, encryption.\nShow last 10 lines of a continuously updating log [Titas     tail -f logfile\nGas AE(CSE) 2024]\n\nShow hidden files and directories [Milk Vita AM(CSE) 2023]   ls -a (or ls -la for details)\nDelete a directory and its files                             rm -r dirname ( rmdir only removes empty ones)\nPrint the last five lines of a text file                     tail -n 5 filename.txt\nDownload a file from a URL                                   wget http://example.com/file.txt\nShow the 11th to 15th line of myfile [BTCL AME 2023]         sed -n ’11,15p’ myfile\nShow permission for read/write/execute on myfile             chmod 777 myfile (or ls -l myfile to view)\nShow the current file directory                              pwd\nMake a directory named PSC [BPSC SAE 2021]                   mkdir PSC\nCopy a directory with all its contents into /home/admin      cp -r PSC /home/admin\n[BPSC SAE 2021]\n\nCreate a user [PGCB SAE(CSE) 2021]                           useradd username then passwd username\nShow all files including hidden ones inside the home di-     ls -a ˜\nrectory [NESCO AM(ICT) 2021]\nShow disk space in human-readable format [NESCO              df -h\nAM(ICT) 2021]\n\nFind previous commands containing a string [BCC AP           history | grep pattern\n2021]\n\nCreate file apscl.txt, give all permissions, read first 7    touch apscl.txt            ·   chmod 777 apscl.txt              ·\nlines, delete it [APSCL AE(ICT) 2021]\n                                                             head -n 7 apscl.txt · rm apscl.txt\n\n                                                              50",
+    "printed": 50,
+    "chapter": 8,
+    "sections": [
+      "7.1 Linux"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Original bank: numbers & Boolean",
+    "bn": "conversion-এর উত্তর যাচাই",
+    "intro": "Original bank-এর ছোট উত্তরগুলো দ্রুত recall-এর জন্য। কিন্তু অঙ্কে ধাপ লিখতে হবে। Example library-তে একই মান দিয়ে solver আছে।",
+    "points": [
+      "E₁₆=14₁₀=16₈=1110₂",
+      "3000₁₀=BB8₁₆",
+      "651₈=425₁₀=1A9₁₆",
+      "1AC₁₆=428₁₀",
+      "2345₁₀=929₁₆",
+      "−24−11=−35"
+    ],
+    "memory": "Final answer নয়, method-ও শিখুন",
+    "text": "RAPID-FIRE QUESTION BANK                                                                                 IT Written Exam Guide\n\n\nQuestion                                                   Answer\n\nOwnership and group permission command [PBL HE 2023]       chown user:group filename                                     and\n\n                                                           chgrp group filename\nWhat is RPM? What is YUM?                                  RPM         =        Red       Hat        Package       Manager\n                                                           (build/install/upgrade/query/remove packages). YUM = Yel-\n                                                           lowdog Updater Modified, an open-source utility that manages\n                                                           RPM packages.\nGPT vs MBR?                                                GPT: >2 TB disks, 128 primary partitions, GUIDs, CRC32 integrity,\n                                                           part of UEFI. MBR: max 2 TB, only 4 primary partitions.\n\n\n\n7.2 Number systems, codes and Boolean algebra\n\n\n\nQuestion                                                   Answer\n\n(E)16 in decimal, octal and binary [45th BCS CSE 2024]     E = 1410 = 168 = 11102\nNext four after 6FC, 6FE [45th BCS CSE 2024]               Step is 2: 700, 702, 704, 706\n2’s complement of (+55)10 [45th BCS CSE 2024]              55 = 00110111; 1’s = 11001000; 2’s = 11001001\n(423)10 to octal and (3000)10 to hex [BPDB AE(CSE) 2024]   (423)10 = (647)8 ; (3000)10 = (BB8)16\n(651)8 to decimal and hex [BPSC AME 2021]                  = 6·64 + 5·8 + 1 = 42510 ; binary 110 101 001 → 1A916\n(1AC)16 to binary and decimal [DPDC 2020]                  1 1010 11002 ; 256 + 160 + 12 = 42810\n(2345)10 to hex [ICT Ministry AP 2017]                     92916\n(ABCD)16 to octal [ICT Ministry AP 2017]                   Binary 1010 1011 1100 1101 → group in 3s → 1257158\n(CDAB)16 to octal [BTCL JAM 2024]                          1100 1101 1010 1011 → 1466538\nWhat is 2’s complement and why is it used?                 1’s complement +1. It lets the computer perform subtraction us-\n                                                           ing addition, and gives a single representation of zero.\n(−24)10 − (+11)10 using 2’s complement [18th NTRCA         −24 − 11 = −35. 35 = 00100011 → 2’s = 11011101\n2024]\nBCD addition 00010011 + 00100110 [NPCNL JAM 2022]          13 + 26 = 39. Both groups ≤ 9, so no correction: 0011 1001\nExcess-3 code of 1010 [DPDC 2020]                          1010 is decimal 10 → digits 1 and 0 → Excess-3 codes 0100 and\n                                                           0011 → 0100 0011\nDifference between BCD and binary code?                    Binary converts the whole number at once; BCD converts each\n                                                           decimal digit separately into 4 bits. BCD wastes codes 1010–1111.\nParity method for error detection [BB AP 2023]             An extra bit makes the total number of 1s even (or odd). The re-\n                                                           ceiver recounts; a wrong count means an error. Detects single-bit\n                                                           errors only, cannot correct them.\nBit string of “Delta” in ASCII [BB AP 2023]                Hex 44 65 6C 74 61 → 01000100 01100101 01101100\n                                                           01110100 01100001\nState De Morgan’s law [BPSC AP 2023]                       A + B = Ā · B̄ and A · B = Ā + B̄. In words: break the bar,\n                                                           change the sign.\nSimplify F = A′ B ′ C + A′ BC + AB ′ [45th BCS CSE 2024]   A′ C(B ′ + B) + AB ′ = A′ C + AB′\nSimplify Y = AB̄ + (A + B)C [BPSC ADA 2022]                AB̄ + AC + BC = AB̄ + AC + BC; with consensus, = AB̄ +\n                                                           C(A + B)\nSimplify (x + y + xy)(x + z) [BPSC AME 2021]               x + y + xy = x + y; so (x + y)(x + z) = x + yz\nSimplify x̄ȳz + x̄yz + xȳ [BPSC AP 2021]                 x̄z(ȳ + y) + xȳ = x̄z + xȳ\n\n\n\n7.3 Gates, K-map and circuits\n\n\n\n\n                                                             51",
+    "printed": 51,
+    "chapter": 8,
+    "sections": [
+      "7.2 Number systems, codes and Boolean algebra",
+      "7.3 Gates, K-map and circuits"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Original bank: gates & processor",
+    "bn": "definition-এ মূল keyword",
+    "intro": "Universal gate, adder, sequential circuit—প্রতিটির সংক্ষিপ্ত উত্তরেই নির্দিষ্ট keyword থাকা চাই।",
+    "points": [
+      "NAND ও NOR universal",
+      "Half adder দুই input, full adder carry-সহ তিন",
+      "Combinational memoryless, sequential state রাখে",
+      "Latch level-sensitive, flip-flop edge-sensitive",
+      "8085 8-bit data, addressable memory 64 KiB"
+    ],
+    "memory": "পার্থক্য লিখুন একই parameter ধরে",
+    "text": "RAPID-FIRE QUESTION BANK                                                                                     IT Written Exam Guide\n\n\nQuestion                                                    Answer\n\nWhat is a universal gate and why? [BRiCM AME 2024,          NAND and NOR. Any other gate (NOT, AND, OR, XOR) — and\nNPCNL JAM 2022]                                             therefore any digital circuit — can be built using only that one gate\n                                                            type.\nNOT using NAND / NOR?                                       Tie both inputs together to the same signal.\nAND using only NAND?                                        NAND followed by a NAND-inverter (2 NANDs).\nOR using only NAND?                                         Invert both inputs with NANDs, then feed a NAND (3 NANDs).\nAND using only NOR?                                         Invert both inputs with NORs, then a NOR (3 NORs).\nOR using only NOR?                                          NOR followed by a NOR-inverter (2 NORs).\nXOR using NAND, maximum 4 gates [PGCB AE(CSE) 2021]\nP                                                           4 NAND gates: Y = A · AB · B · AB\n  (3, 5, 7, 9, 11, 13, 15) simplified [Bank SO(AME) 2021]   All odd minterms ⇒ Z is 1 in every one ⇒ F = Z (for W, X, Y, Z\n                                                            with Z as LSB).\nF = ABC + ABC + ABC + ABC + ABC by K-map                    Group: F = AB + AB + BC (check each group by dropping the\n[38th BCS]                                                  changing variable).\nRule for reading a K-map group?                             Drop every variable that changes inside the group; keep the ones\n                                                            that stay constant. 0 → barred, 1 → unbarred (for SOP).\nWhy is the order 00, 01, 11, 10?                            So that only one bit changes between adjacent cells (Gray code)\n                                                            — that is what makes grouping valid.\nWhat is a don’t-care condition?                             An input combination that can never occur or whose output does\n                                                            not matter. Marked ×. Use it as 1 to make a bigger group, or ignore\n                                                            it.\nHalf adder equations?                                       S = A ⊕ B, C = A · B\nFull adder equations?                                       S = A ⊕ B ⊕ Cin , Cout = AB + BCin + ACin\nA full adder is made of? [PSC Lecturer 2017]                Two half adders and one OR gate.\nFunctionality of a multiplexer [PSC Lecturer 2017]          Selects one of 2n data inputs and routes it to a single output, based\n                                                            on n select lines. “Many to one.”\nFive applications of a multiplexer [BCSCL NE 2017]          Data routing/selection, communication systems, parallel-to-serial\n                                                            conversion, waveform generation, implementing Boolean functions\n                                                            (logic function generator).\nEncoder vs decoder?                                         Encoder: 2n inputs → n outputs, built from OR gates, simple.\n                                                            Decoder: n inputs → 2n outputs, built from AND + NOT gates,\n                                                            complex.\nLatch vs flip-flop?                                         Latch is level-triggered (works while enable is high); flip-flop is\n                                                            edge-triggered (works on a clock transition).\nWhich flip-flop has an invalid state, and which cures it?   SR is invalid at S = R = 1; JK cures it by making that combination\n                                                            toggle. D has no invalid state.\nRace-around condition?                                      In a JK flip-flop with J = K = 1, the output toggles repeatedly\n                                                            while the clock is high. Cured by master–slave or edge triggering.\nCombinational vs sequential circuit?                        Combinational: no memory, no feedback, output depends only on\n                                                            present input (adder, MUX). Sequential: has memory and feedback,\n                                                            output depends on present input and past state (flip-flop, counter).\nn flip-flops count up to?                                   0 to 2n − 1, i.e. mod-2n . A mod-10 counter needs 4 flip-flops.\nSynchronous vs asynchronous counter?                        Synchronous: same clock to all flip-flops, fast, no cumulative delay.\n                                                            Asynchronous (ripple): output of one clocks the next, simpler but\n                                                            slower.\n\n\n\n7.4 Microprocessor, assembly and software engineering\n\n\n\nQuestion                                                    Answer\n\n8085 — year, bits, buses, memory?                           Intel 1977, 8-bit data bus, 16-bit address bus, addresses 64 KB,\n                                                            +5 V, 3.2 MHz.\n8085 register pairs?                                        BC, DE, HL (six 8-bit registers), plus accumulator, flag register, 16-\n                                                            bit PC and 16-bit SP.\nHighest priority 8085 interrupt?                            TRAP — and it is non-maskable.\n\n\n\n                                                              52",
+    "printed": 52,
+    "chapter": 8,
+    "sections": [
+      "7.4 Microprocessor, assembly and software engineering"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Original bank: assembly & SDLC",
+    "bn": "শেষবার active recall",
+    "intro": "শেষ পৃষ্ঠায় processor, assembly, SDLC, testing ও quality-এর প্রশ্ন আছে। ভুল হলে সংশ্লিষ্ট মূল chapter-এ ফিরে যান।",
+    "points": [
+      "8086 1 MiB, 6-byte queue",
+      "SRS requirements নির্ধারণে",
+      "Spiral risk-driven",
+      "Cohesion high, coupling low",
+      "DMAIC improve, DMADV design",
+      "Singleton এক instance"
+    ],
+    "memory": "না দেখে উত্তর → ভুল তালিকা → revisit",
+    "text": "RAPID-FIRE QUESTION BANK                                                                                IT Written Exam Guide\n\n\nQuestion                                              Answer\n\n8086 — bits, address bus, memory, queue?              First 16-bit processor; 20-bit address bus → 1 MB; 6-byte instruc-\n                                                      tion queue; BIU and EU.\nHow many addressing modes does the 8086 have?         Eight.\nMOV AL, 35H is which mode?                            Immediate — the operand is inside the instruction.\nMOV AX, [BX] is which mode?                           Register indirect.\nMOV DX, [BX+04] is which mode?                        Based addressing.\nWhat is an interrupt and an ISR?                      An interrupt temporarily halts execution so a peripheral can access\n                                                      the processor; the ISR is the short routine that tells the processor\n                                                      how to handle it.\nMaskable vs non-maskable?                             Maskable can be disabled by the programmer (INTR, RST\n                                                      5.5/6.5/7.5); non-maskable cannot (TRAP).\nMicroprocessor vs microcontroller?                    µP: only the processor, external memory/IO, costly, high power,\n                                                      used in PCs. µC: CPU + memory + I/O on one chip, cheap, low\n                                                      power, used in embedded devices.\nWhat does an assembler do?                            Converts assembly language into machine code that a specific pro-\n                                                      cessor can execute.\nFour parts of an assembly statement?                  Label (ends with :), mnemonic, operand(s), comment (begins with\n                                                      ;).\nMacro vs procedure?                                   Macro: no CALL/RET, code generated each call, more memory, <10\n                                                      instructions. Procedure: uses CALL/RET, code generated once, less\n                                                      memory, >10 instructions.\nTimer vs counter?                                     Counter increments on an external pulse (max rate 1/24 of oscilla-\n                                                      tor); timer increments every machine cycle from the internal clock\n                                                      (max rate 1/12).\nThe 7 SDLC stages?                                    Planning & requirement analysis, defining requirements (SRS), de-\n                                                      sign, development, testing, deployment, maintenance.\nWhich stage produces the SRS?                         Stage 2 — defining requirements.\nWhich stage ensures user acceptance?                  Testing, specifically acceptance testing.\nWaterfall disadvantages?                              Cannot accept requirement changes; high risk; unsuitable for large\n                                                      complex projects; working software comes late.\nHow long is one Agile iteration?                      One to three weeks.\nName four Agile methods.                              Scrum, XP (eXtreme Programming), FDD, DSDM, Crystal, Lean.\nThe defining feature of the spiral model?             Risk analysis in every loop.\nWhite box vs black box in one line?                   White box: internal code known, done by the developer, suits algo-\n                                                      rithm testing, slowest. Black box: only the GUI/functionality, done\n                                                      by the test engineer, fastest.\nVerification vs validation?                           Verification = “building the product right”, static, no execution, QA.\n                                                      Validation = “building the right product”, dynamic, code executes,\n                                                      QC.\nAlpha vs beta testing?                                Alpha: in-house, white + black box, before launch. Beta: real\n                                                      users, black box only, at marketing time.\nCohesion vs coupling — which is high, which is low?   Cohesion high (strength within a module); coupling low (depen-\n                                                      dence between modules).\nThree types of feasibility?                           Technical, operational (behavioural), economic.\nFive steps of requirement engineering?                Feasibility study, elicitation & analysis, specification (SRS), valida-\n                                                      tion, management.\nDMAIC vs DMADV?                                       DMAIC (Define, Measure, Analyse, Improve, Control) improves an\n                                                      existing process; DMADV (. . . Design, Verify) creates a new design.\nSingleton pattern?                                    A class with only one instance and a global point of access. Early or\n                                                      lazy instantiation. Saves memory; used in logging, caching, thread\n                                                      pools, configuration.\n\n\n\n  Last word\n\n  You are not behind because you are weak — you are behind because nobody showed you which 55 pages\n  actually matter. Now somebody has. Do Part 3 until K-maps feel boring, and this question bank until you\n  answer before you finish reading.\n\n\n                                                        53",
+    "printed": 53,
+    "chapter": 8,
+    "sections": []
+  }
+]
